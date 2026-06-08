@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>Selvedge — All Elements</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="selvedge-preview.css">
+<style>
+  .el-pagenav {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 200;
+    background: var(--wp--preset--color--indigo);
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+  .el-pagenav a {
+    font-family: var(--wp--preset--font-family--sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--wp--preset--color--indigo-light);
+    opacity: 0.8;
+  }
+  .el-pagenav a:hover { opacity: 1; }
+  .el-pagenav .el-pagenav-label {
+    font-family: var(--wp--preset--font-family--serif);
+    font-weight: 500;
+    font-style: italic;
+    color: var(--wp--preset--color--white);
+    opacity: 1;
+    margin-inline-end: 0.5rem;
+  }
+  .el-section {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--wp--preset--color--rule);
+  }
+  .el-section-title {
+    font-family: var(--wp--preset--font-family--sans);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--wp--preset--color--ink-muted);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--wp--preset--color--indigo);
+    display: inline-block;
+  }
+  .el-row { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; margin-bottom: 1rem; }
+  .el-swatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    min-width: 80px;
+  }
+  .el-swatch-block {
+    width: 64px;
+    height: 64px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+  .el-swatch-name {
+    font-family: var(--wp--preset--font-family--sans);
+    font-size: 0.6rem;
+    color: var(--wp--preset--color--ink-muted);
+    text-align: center;
+    max-width: 80px;
+    word-break: break-all;
+  }
+  .el-type-row {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .el-type-label {
+    font-family: var(--wp--preset--font-family--sans);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--wp--preset--color--ink-faint);
+    min-width: 80px;
+    flex-shrink: 0;
+  }
+  .el-btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6em 1.4em;
+    font-family: var(--wp--preset--font-family--sans);
+    font-size: var(--wp--preset--font-size--sm);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--wp--preset--color--indigo);
+    background: transparent;
+    border: 2px solid var(--wp--preset--color--indigo);
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body class="selvedge-site">
+
+<!-- Page nav -->
+<nav class="el-pagenav" aria-label="Element reference navigation">
+  <span class="el-pagenav-label">Selvedge</span>
+  <a href="#s-header">Header</a>
+  <a href="#s-typography">Typography</a>
+  <a href="#s-color">Color</a>
+  <a href="#s-buttons">Buttons</a>
+  <a href="#s-lists">Lists</a>
+  <a href="#s-blockquote">Blockquote</a>
+  <a href="#s-code">Code</a>
+  <a href="#s-cards">Cards</a>
+  <a href="#s-footer">Footer</a>
+</nav>
+
+<!-- Header -->
+<div id="s-header">
+  <header class="selvedge-header">
+    <div class="selvedge-constrained">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:1.25rem 0">
+        <a href="#" class="selvedge-site-title-link">Selvedge</a>
+        <nav class="selvedge-nav" aria-label="Primary navigation">
+          <a href="#">Studio</a>
+          <a href="#">Materials</a>
+          <a href="#">Workshops</a>
+          <a href="#">Journal</a>
+          <a href="#">Shop</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+      <div class="selvedge-accent-rule"></div>
+    </div>
+  </header>
+</div>
+
+<div class="selvedge-constrained">
+
+  <!-- Typography -->
+  <section class="el-section" id="s-typography">
+    <div class="el-section-title">Typography Scale</div>
+
+    <div class="el-type-row">
+      <span class="el-type-label">Display</span>
+      <span style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--5xl);font-weight:700;line-height:1.05;letter-spacing:-0.02em;color:var(--wp--preset--color--ink)">Material as meaning.</span>
+    </div>
+    <div class="el-type-row">
+      <span class="el-type-label">H1</span>
+      <h1 style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--4xl);font-weight:700;letter-spacing:-0.02em;margin:0;color:var(--wp--preset--color--ink)">The Warp and Weft of Natural Dyeing</h1>
+    </div>
+    <div class="el-type-row">
+      <span class="el-type-label">H2</span>
+      <h2 style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--3xl);font-weight:600;margin:0;color:var(--wp--preset--color--ink)">Indigo from the Garden</h2>
+    </div>
+    <div class="el-type-row">
+      <span class="el-type-label">H3</span>
+      <h3 style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--2xl);font-weight:600;margin:0;color:var(--wp--preset--color--ink)">The Mordanting Process</h3>
+    </div>
+    <div class="el-type-row">
+      <span class="el-type-label">H4</span>
+      <h4 style="font-family:var(--wp--preset--font-family--sans);font-size:var(--wp--preset--font-size--xl);font-weight:700;letter-spacing:0.02em;margin:0;color:var(--wp--preset--color--ink)">Equipment &amp; Materials</h4>
+    </div>
+    <div class="el-type-row">
+      <span class="el-type-label">Body</span>
+      <p class="selvedge-reading" style="max-width:640px;margin:0">Natural dyeing is the practice of using plant-based pigments to colour textile fibers. Unlike synthetic dyes, plant-based colours develop a patina over time — deepening, shifting, becoming more themselves as the fabric is worn and washed. This is the quality that makes naturally dyed textiles worth the labour.</p>
+    </div>
+    <div class="el-type-row">
+      <span class="el-type-label">Notation</span>
+      <span class="selvedge-notation-title">100% linen · natural dyeing · warp threads</span>
+    </div>
+    <div class="el-type-row">
+      <span class="el-type-label">Post meta</span>
+      <div class="selvedge-post-meta">
+        <span>June 8, 2026</span>
+        <span class="selvedge-post-meta-sep">/</span>
+        <span class="selvedge-post-terms">Natural Dyeing, Linen</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Color palette -->
+  <section class="el-section" id="s-color">
+    <div class="el-section-title">Color Palette</div>
+    <div class="el-row">
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--ink)"></div><span class="el-swatch-name">ink</span></div>
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--ink-secondary)"></div><span class="el-swatch-name">ink-secondary</span></div>
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--ink-muted)"></div><span class="el-swatch-name">ink-muted</span></div>
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--ink-faint)"></div><span class="el-swatch-name">ink-faint</span></div>
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--ground)"></div><span class="el-swatch-name">ground</span></div>
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--ground-mid)"></div><span class="el-swatch-name">ground-mid</span></div>
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--ground-deep)"></div><span class="el-swatch-name">ground-deep</span></div>
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--indigo)"></div><span class="el-swatch-name">indigo</span></div>
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--indigo-light)"></div><span class="el-swatch-name">indigo-light</span></div>
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--weld)"></div><span class="el-swatch-name">weld</span></div>
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--rule)"></div><span class="el-swatch-name">rule</span></div>
+      <div class="el-swatch"><div class="el-swatch-block" style="background:var(--wp--preset--color--white)"></div><span class="el-swatch-name">white</span></div>
+    </div>
+
+    <div style="margin-top:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap">
+      <div class="selvedge-band--ground" style="padding:0.75rem 1.25rem;border:1px solid var(--wp--preset--color--rule);font-family:var(--wp--preset--font-family--sans);font-size:0.75rem">ground band</div>
+      <div class="selvedge-band--indigo" style="padding:0.75rem 1.25rem;font-family:var(--wp--preset--font-family--sans);font-size:0.75rem;color:var(--wp--preset--color--white)">indigo band</div>
+      <div class="selvedge-band--ink" style="padding:0.75rem 1.25rem;font-family:var(--wp--preset--font-family--sans);font-size:0.75rem;color:var(--wp--preset--color--ground)">ink band</div>
+    </div>
+  </section>
+
+  <!-- Buttons -->
+  <section class="el-section" id="s-buttons">
+    <div class="el-section-title">Buttons</div>
+    <div class="el-row">
+      <a href="#" class="selvedge-btn">View Materials</a>
+      <a href="#" class="el-btn-outline">Browse Workshops</a>
+      <a href="#" class="selvedge-btn" style="opacity:0.5;cursor:not-allowed" aria-disabled="true">Sold Out</a>
+    </div>
+  </section>
+
+  <!-- Links and lists -->
+  <section class="el-section" id="s-lists">
+    <div class="el-section-title">Links &amp; Lists</div>
+    <p class="selvedge-reading" style="max-width:640px;margin-bottom:1.5rem">
+      The <a href="#">mordanting process</a> binds the dye to the fiber. Common mordants include <a href="#">alum</a>, <a href="#">iron</a>, and tannin-rich <a href="#">oak gall</a>. Each mordant shifts the final colour differently.
+    </p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:640px">
+      <div>
+        <p style="font-family:var(--wp--preset--font-family--sans);font-size:0.7rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--ink-faint);margin-bottom:0.75rem">Dyestuffs</p>
+        <ul style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--base);color:var(--wp--preset--color--ink-secondary);padding-left:1.25rem;line-height:1.7">
+          <li>Japanese Indigo (Persicaria tinctoria)</li>
+          <li>Weld (Reseda luteola)</li>
+          <li>Woad (Isatis tinctoria)</li>
+          <li>Madder root</li>
+          <li>Black-eyed Susan</li>
+        </ul>
+      </div>
+      <div>
+        <p style="font-family:var(--wp--preset--font-family--sans);font-size:0.7rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--ink-faint);margin-bottom:0.75rem">Process</p>
+        <ol style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--base);color:var(--wp--preset--color--ink-secondary);padding-left:1.25rem;line-height:1.7">
+          <li>Scour the fiber</li>
+          <li>Apply mordant</li>
+          <li>Prepare the dye bath</li>
+          <li>Enter and exhaust the bath</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blockquote -->
+  <section class="el-section" id="s-blockquote">
+    <div class="el-section-title">Blockquote</div>
+    <blockquote class="selvedge-quote" style="max-width:640px">
+      "The selvedge is the self-finished edge of a woven cloth — the boundary that keeps the weft from unravelling. It's where the structure of the fabric becomes visible."
+      <footer style="font-family:var(--wp--preset--font-family--sans);font-size:var(--wp--preset--font-size--xs);font-weight:600;margin-top:0.75rem;color:var(--wp--preset--color--ink-muted)">— Maren Holst, <cite>The Textile Studio</cite></footer>
+    </blockquote>
+  </section>
+
+  <!-- Code -->
+  <section class="el-section" id="s-code">
+    <div class="el-section-title">Code</div>
+    <p class="selvedge-reading" style="max-width:640px;margin-bottom:1.5rem">
+      The mordant ratio is typically expressed as <code>mordant_weight / fiber_weight</code> — for alum, 15–20% WOF is standard for wool.
+    </p>
+    <pre style="background:var(--wp--preset--color--ground-mid);border:1px solid var(--wp--preset--color--rule);padding:1.25rem;border-radius:2px;font-size:0.8rem;overflow-x:auto;max-width:640px;font-family:monospace;color:var(--wp--preset--color--ink)">mordant: alum
+weight_of_fiber: 100g
+mordant_amount: 15g  # 15% WOF
+water_volume: 4L
+temperature: 82°C
+duration: 45 minutes</pre>
+  </section>
+
+  <!-- Separator -->
+  <section class="el-section">
+    <div class="el-section-title">Separator</div>
+    <div class="selvedge-separator" style="margin:1.5rem 0"></div>
+    <div class="selvedge-accent-rule"></div>
+  </section>
+
+  <!-- Cards -->
+  <section class="el-section" id="s-cards">
+    <div class="el-section-title">Material Cards</div>
+    <div class="selvedge-materials-grid">
+      <div class="selvedge-card">
+        <div class="selvedge-product-img" style="background:linear-gradient(135deg,#3a5f3a,#2c4a2c)"></div>
+        <div style="padding:0.875rem">
+          <div class="selvedge-card-meta">Japanese Indigo · Summer 2026</div>
+          <div class="selvedge-card-title">Persicaria Tinctoria Bundle</div>
+          <div class="selvedge-product-price">$28.00</div>
+          <div class="selvedge-card-note">Dried leaf bundle, 50g · ships from studio</div>
+        </div>
+      </div>
+      <div class="selvedge-card">
+        <div class="selvedge-product-img" style="background:linear-gradient(135deg,#5c3d1e,#8b5e2a)"></div>
+        <div style="padding:0.875rem">
+          <div class="selvedge-card-meta">Mordant · Year-round</div>
+          <div class="selvedge-card-title">Alum Sulphate, Food Grade</div>
+          <div class="selvedge-product-price">$12.00</div>
+          <div class="selvedge-card-note">500g · free shipping over $60</div>
+        </div>
+      </div>
+      <div class="selvedge-card">
+        <div class="selvedge-product-img" style="background:linear-gradient(135deg,#2c3a6b,#1a2a5a)"></div>
+        <div style="padding:0.875rem">
+          <div class="selvedge-card-meta">Woad · Archive</div>
+          <div class="selvedge-card-title">Woad Extract Powder</div>
+          <div class="selvedge-product-price">$34.00</div>
+          <div class="selvedge-card-note">25g concentrated extract</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /.selvedge-constrained -->
+
+<!-- Footer -->
+<div id="s-footer">
+  <footer class="selvedge-footer">
+    <div class="selvedge-constrained">
+      <hr class="selvedge-footer-hr">
+      <div class="selvedge-footer-row">
+        <div>
+          <div class="selvedge-footer-title">Selvedge Studio</div>
+          <p class="selvedge-footer-sub">Natural materials, handmade textiles, and the knowledge to make both.</p>
+        </div>
+        <nav class="selvedge-footer-nav-links">
+          <a href="#">Studio</a>
+          <a href="#">Materials</a>
+          <a href="#">Workshops</a>
+          <a href="#">Journal</a>
+          <a href="#">Shop</a>
+        </nav>
+      </div>
+      <div class="selvedge-footer-bottom">
+        <span>&copy; 2026 Selvedge Studio</span>
+        <a href="#">Privacy</a>
+        <a href="#">Shipping</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

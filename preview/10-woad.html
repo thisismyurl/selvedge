@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1440">
+<title>Selvedge — Woad (Style Variation)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="selvedge-preview.css">
+<style>
+  /* Style variation: Woad — dark indigo ground, light text (styles/woad.json).
+     The variation inverts the scheme: a near-night indigo ground with the
+     colophon-dark anchor (#e0dcd4) carrying the foreground text. Token names
+     keep their semantic slots; the values flip for the dark surface. */
+  :root {
+    --wp--preset--color--ink:           #e0dcd4; /* foreground (colophon-dark anchor, inverted) */
+    --wp--preset--color--ink-secondary: #c4c8d0;
+    --wp--preset--color--ink-muted:     #8fa2b8;
+    --wp--preset--color--ink-faint:     #5a7088;
+    --wp--preset--color--ground:        #162030; /* dark indigo night ground */
+    --wp--preset--color--ground-mid:    #1d2a3d;
+    --wp--preset--color--ground-deep:   #28384f;
+    --wp--preset--color--indigo:        #7ab0cc; /* woad-blue accent, light enough on dark */
+    --wp--preset--color--indigo-light:  #284058;
+    --wp--preset--color--rule:          #2f435c;
+    --wp--preset--color--white:         #f0ece4;
+    --cl-focus-ring:                    #7ab0cc;
+  }
+  /* On the dark ground, links read in the woad-blue accent. */
+  body { background: var(--wp--preset--color--ground); color: var(--wp--preset--color--ink); }
+  a { color: var(--wp--preset--color--indigo); }
+  a:hover { color: var(--wp--preset--color--ink); }
+</style>
+</head>
+<body>
+<div class="selvedge-site">
+
+  <header class="selvedge-header" style="background: var(--wp--preset--color--ground); border-bottom-color: var(--wp--preset--color--rule);">
+    <a class="selvedge-site-title-link" href="01-front-page.html" style="color: var(--wp--preset--color--ink);">Selvedge</a>
+    <nav class="selvedge-nav">
+      <a href="02-studio.html" style="color: var(--wp--preset--color--ink);">Studio</a>
+      <a href="03-materials.html" style="color: var(--wp--preset--color--ink);">Work</a>
+      <a href="05-journal-post.html" style="color: var(--wp--preset--color--ink);">Journal</a>
+      <a href="06-shop.html" style="color: var(--wp--preset--color--ink);">Shop</a>
+      <a href="#" style="color: var(--wp--preset--color--ink);">Contact</a>
+    </nav>
+  </header>
+
+  <main class="selvedge-main">
+
+    <section class="selvedge-hero selvedge-band--ground selvedge-section" style="padding-block: var(--wp--preset--spacing--12);">
+      <div class="selvedge-constrained">
+        <p class="is-style-selvedge-eyebrow" style="margin-bottom: var(--wp--preset--spacing--5); color: var(--wp--preset--color--indigo);">Style variation · Woad</p>
+        <h1 style="font-size: var(--wp--preset--font-size--4xl); margin-bottom: var(--wp--preset--spacing--6); color: var(--wp--preset--color--ink);">Deep in<br>the vat.</h1>
+        <hr class="selvedge-accent-rule" style="margin-bottom: var(--wp--preset--spacing--5); border-top-color: var(--wp--preset--color--indigo);">
+        <p class="is-style-selvedge-lead" style="max-width: 56ch; color: var(--wp--preset--color--ink-secondary);">The night palette — a fermented-indigo ground the colour of the vat at its deepest, with cloth-pale type drawn across it. The same studio, after dark.</p>
+      </div>
+    </section>
+
+    <section class="selvedge-band--ground-mid selvedge-section" style="background: var(--wp--preset--color--ground-mid);">
+      <div class="selvedge-constrained">
+        <div class="selvedge-section-header" style="border-bottom-color: var(--wp--preset--color--rule);">
+          <h2 class="is-style-selvedge-eyebrow" style="color: var(--wp--preset--color--indigo);">The blue range</h2>
+          <p class="is-style-selvedge-annotation" style="color: var(--wp--preset--color--ink-muted);"><a href="03-materials.html" style="color: var(--wp--preset--color--indigo);">All materials &rarr;</a></p>
+        </div>
+        <div class="selvedge-materials-grid">
+          <div class="selvedge-card">
+            <div class="selvedge-swatch" style="background: #28384f;"><span class="selvedge-swatch-label">One dip</span></div>
+            <div class="selvedge-card-title" style="color: var(--wp--preset--color--ink);">Pale woad linen</div>
+            <div class="selvedge-card-meta" style="color: var(--wp--preset--color--indigo);">Single dip</div>
+          </div>
+          <div class="selvedge-card">
+            <div class="selvedge-swatch" style="background: #1d2a3d;"><span class="selvedge-swatch-label">Three dips</span></div>
+            <div class="selvedge-card-title" style="color: var(--wp--preset--color--ink);">Mid-vat wool</div>
+            <div class="selvedge-card-meta" style="color: var(--wp--preset--color--indigo);">Three dips</div>
+          </div>
+          <div class="selvedge-card">
+            <div class="selvedge-swatch" style="background: #0e1620;"><span class="selvedge-swatch-label">Six dips</span></div>
+            <div class="selvedge-card-title" style="color: var(--wp--preset--color--ink);">Night-deep hemp</div>
+            <div class="selvedge-card-meta" style="color: var(--wp--preset--color--indigo);">Six dips</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="selvedge-footer" style="background: var(--wp--preset--color--ground-deep);">
+    <div class="selvedge-footer-row">
+      <div>
+        <div class="selvedge-footer-title" style="color: var(--wp--preset--color--ink);">Selvedge</div>
+        <div class="selvedge-footer-sub" style="color: var(--wp--preset--color--indigo);">Textile studio · Natural dye</div>
+      </div>
+      <nav class="selvedge-footer-nav-links">
+        <a href="02-studio.html" style="color: var(--wp--preset--color--ink);">Studio</a>
+        <a href="03-materials.html" style="color: var(--wp--preset--color--ink);">Work</a>
+        <a href="05-journal-post.html" style="color: var(--wp--preset--color--ink);">Journal</a>
+        <a href="06-shop.html" style="color: var(--wp--preset--color--ink);">Shop</a>
+      </nav>
+    </div>
+    <hr class="selvedge-footer-hr" style="border-top-color: var(--wp--preset--color--rule);">
+    <div class="selvedge-footer-bottom" style="color: var(--wp--preset--color--ink-muted);">
+      <span>&copy; 2026 Selvedge Studio</span>
+      <span>Built with WordPress &amp; <a href="https://thisismyurl.com/selvedge/" style="color: var(--wp--preset--color--indigo);">Selvedge</a></span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

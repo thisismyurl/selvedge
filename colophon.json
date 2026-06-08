@@ -1,0 +1,10 @@
+{
+  "name": "Selvedge",
+  "slug": "selvedge",
+  "namespace": "Selvedge",
+  "prefix": "selvedge",
+  "version": "1.158.1749",
+  "colophon_version": "1.158.1749",
+  "is_core": false,
+  "overrides": {}
+}

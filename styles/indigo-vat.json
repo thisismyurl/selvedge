@@ -1,0 +1,117 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "title": "Indigo Vat",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "ink",
+          "color": "#C8D4F0",
+          "name": "Ink"
+        },
+        {
+          "slug": "ink-secondary",
+          "color": "#A0AEDD",
+          "name": "Ink Secondary"
+        },
+        {
+          "slug": "ink-muted",
+          "color": "#7080B0",
+          "name": "Ink Muted"
+        },
+        {
+          "slug": "ink-faint",
+          "color": "#4A5A90",
+          "name": "Ink Faint"
+        },
+        {
+          "slug": "ground",
+          "color": "#1E2B5A",
+          "name": "Ground"
+        },
+        {
+          "slug": "ground-mid",
+          "color": "#263460",
+          "name": "Ground Mid"
+        },
+        {
+          "slug": "ground-deep",
+          "color": "#1A2250",
+          "name": "Ground Deep"
+        },
+        {
+          "slug": "indigo",
+          "color": "#8098E0",
+          "name": "Indigo"
+        },
+        {
+          "slug": "indigo-light",
+          "color": "#121B3C",
+          "name": "Indigo Light"
+        },
+        {
+          "slug": "weld",
+          "color": "#C48A20",
+          "name": "Weld"
+        },
+        {
+          "slug": "rule",
+          "color": "#2A3560",
+          "name": "Rule"
+        },
+        {
+          "slug": "white",
+          "color": "#F0F4FF",
+          "name": "White"
+        }
+      ]
+    },
+    "custom": {
+      "colophon-light": "#1E2B5A",
+      "colophon-dark": "#C8D4F0",
+      "colophon-accent": "#C48A20"
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--ground)",
+      "text": "var(--wp--preset--color--ink)"
+    },
+    "elements": {
+      "heading": {
+        "color": {
+          "text": "var(--wp--preset--color--white)"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--indigo)"
+        },
+        ":hover": {
+          "color": {
+            "text": "var(--wp--preset--color--white)"
+          }
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var(--wp--preset--color--weld)",
+          "text": "var(--wp--preset--color--ground)"
+        }
+      }
+    },
+    "blocks": {
+      "core/site-title": {
+        "color": {
+          "text": "var(--wp--preset--color--white)"
+        }
+      },
+      "core/navigation": {
+        "color": {
+          "text": "var(--wp--preset--color--ink)"
+        }
+      }
+    }
+  }
+}

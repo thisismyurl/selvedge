@@ -1,0 +1,296 @@
+/* ── Parametric colour system (Colophon v2) ─────────────────────────────────
+   Three anchor custom props drive the entire neutral + accent scale via
+   color-mix() in OKLCh space. Set in settings.custom (theme.json); overridden
+   per style variation via the same settings.custom key.
+
+   Derived tokens (--clr-*) are intentionally separate from the block-editor
+   palette (--wp--preset--color--*). The palette tokens give the editor
+   accurate swatches; --clr-* tokens give CSS components automatic
+   variation-awareness without manual per-token overrides.
+
+   color-mix() browser support: Chrome 111+ · Firefox 113+ · Safari 16.2+
+   Global coverage ≈ 93 %. Fallback values (hex literals) serve older clients.
+   ─────────────────────────────────────────────────────────────────────────── */
+body {
+  /* Anchors — resolved from settings.custom; hex literals are the fallback */
+  --colophon-light:  var(--wp--custom--colophon-light,  #F5F0E8);
+  --colophon-dark:   var(--wp--custom--colophon-dark,   #1A1612);
+  --colophon-accent: var(--wp--custom--colophon-accent, #2C3A6B);
+
+  /* Derived neutral scale (8 % / 22 % / 45 % stops in OKLCh) */
+  --clr-bg:          var(--colophon-light);
+  --clr-fg:          var(--colophon-dark);
+  --clr-surface:     color-mix(in oklch, var(--colophon-dark)  8%,  var(--colophon-light));
+  --clr-rule:        color-mix(in oklch, var(--colophon-dark) 22%,  var(--colophon-light));
+  --clr-muted:       color-mix(in oklch, var(--colophon-dark) 45%,  var(--colophon-light));
+
+  /* Accent and its tinted surface */
+  --clr-accent:      var(--colophon-accent);
+  --clr-accent-tint: color-mix(in oklch, var(--colophon-accent) 12%, var(--colophon-light));
+}
+
+/* =====================================================================
+   [SKIN] skin.css — Selvedge's layout, components, blocks, and utilities.
+   ---------------------------------------------------------------------
+   This is Selvedge's personality. The reset and base sheets are shared
+   across the Colophon collection; this sheet is what makes Selvedge a
+   textile arts publishing theme and not a news theme.
+
+   Architecture: CSS @layers (declared in reset.css):
+     @layer layout     — structural containers, grids
+     @layer components — reusable UI (notation stages, swatch gallery)
+     @layer blocks     — WordPress block-specific overrides
+     @layer utilities  — single-purpose helpers
+
+   Pillar 8 (Kodawari): the editorial hero is a media-text block, not
+   full-bleed photography. Image and word at equal weight — that IS the
+   design. The full-bleed is the lazy choice; the split is the argument.
+
+   WCAG NOTE on weld (#B5660A): 3.9:1 contrast ratio. This passes WCAG
+   1.4.3 for large text only (18pt+ / 14pt+ bold). Do NOT apply weld to
+   body text or any text smaller than 18pt. CSS enforces this by using
+   weld only inside heading selectors and the is-style-selvedge-notation
+   heading element. The comment is here because the rule will surprise
+   the next developer: this is NOT an oversight, it's a deliberate
+   constraint that must be maintained.
+
+   Pillar 9 (Archaeological Records): section headers explain WHY.
+   ===================================================================== */
+
+/* =====================================================================
+   LAYER: layout
+   ===================================================================== */
+@layer layout {
+
+	:root {
+		--wp--style--root--padding-top:    var(--wp--preset--spacing--4);
+		--wp--style--root--padding-right:  var(--wp--preset--spacing--5);
+		--wp--style--root--padding-bottom: var(--wp--preset--spacing--4);
+		--wp--style--root--padding-left:   var(--wp--preset--spacing--5);
+	}
+
+	:root { color-scheme: light; }
+
+	:root {
+		--cl-focus-ring:         var(--wp--preset--color--indigo);
+		--cl-focus-ring-inverse: var(--wp--preset--color--white);
+		--cl-skip-bg:            var(--wp--preset--color--indigo);
+		--cl-skip-fg:            var(--wp--preset--color--white);
+	}
+
+	/* Studio journal archive — 1 col mobile, 2-col at md */
+	.selvedge-studio-journal {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--wp--preset--spacing--8);
+	}
+	@media (min-width: 760px) {
+		.selvedge-studio-journal { grid-template-columns: 1fr 1fr; }
+	}
+
+	/* Material archive gallery — 2-col on mobile, 3-col at md */
+	.selvedge-material-archive {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--wp--preset--spacing--4);
+	}
+	@media (min-width: 680px) {
+		.selvedge-material-archive { grid-template-columns: repeat(3, 1fr); }
+	}
+
+	/* Workshop listing — stacked on mobile, 2-col at md */
+	.selvedge-workshop-listing {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--wp--preset--spacing--6);
+	}
+	@media (min-width: 760px) {
+		.selvedge-workshop-listing { grid-template-columns: 1fr 1fr; }
+	}
+
+	/* Pull-quote thread — narrow centered column for long-form flow */
+	.selvedge-pull-quote-thread {
+		max-inline-size: 60ch;
+		margin-inline: auto;
+	}
+}
+
+/* =====================================================================
+   LAYER: components
+   ===================================================================== */
+@layer components {
+
+	/* Process notation step — weld accent on heading (WCAG AA large only).
+	   See file header WCAG NOTE. Do not apply weld to body copy here. */
+	.selvedge-process-section { counter-reset: selvedge-process; }
+	.is-style-selvedge-notation {
+		counter-increment: selvedge-process;
+		border-block-start: 1px solid var(--wp--preset--color--ground-deep);
+		padding-block: var(--wp--preset--spacing--8);
+		position: relative;
+		padding-inline-start: var(--wp--preset--spacing--12);
+	}
+	.is-style-selvedge-notation::before {
+		content: counter(selvedge-process, decimal-leading-zero);
+		position: absolute;
+		inset-inline-start: 0;
+		inset-block-start: var(--wp--preset--spacing--8);
+		font-family: var(--wp--preset--font-family--jakarta);
+		font-size: var(--wp--preset--font-size--2xs);
+		font-weight: 600;
+		letter-spacing: 0.06em;
+		/* weld at 2xs = ~11px — too small; use indigo for the counter number.
+		   weld is reserved for the heading INSIDE the notation stage. */
+		color: var(--wp--preset--color--indigo);
+	}
+	.is-style-selvedge-notation:last-child {
+		border-block-end: 1px solid var(--wp--preset--color--ground-deep);
+	}
+	/* The draft-notation heading INSIDE a notation stage — weld at h4+ size */
+	.is-style-selvedge-notation .is-style-selvedge-draft-notation {
+		/* weld at heading size (24px+) = 3.9:1 — WCAG AA large text compliant */
+		color: var(--wp--preset--color--weld) !important;
+	}
+
+	/* Colophon credit — small Jakarta, ink-muted */
+	.is-style-selvedge-colophon {
+		font-family: var(--wp--preset--font-family--jakarta) !important;
+		font-size: var(--wp--preset--font-size--xs) !important;
+		font-weight: 400 !important;
+		color: var(--wp--preset--color--ink-muted) !important;
+		letter-spacing: 0.03em !important;
+		line-height: 1.5 !important;
+	}
+
+	/* Material swatch image — square, ground-mid background for negative space */
+	.wp-block-image.is-style-selvedge-swatch {
+		background: var(--wp--preset--color--ground-mid);
+		padding: var(--wp--preset--spacing--2);
+	}
+	.wp-block-image.is-style-selvedge-swatch img {
+		aspect-ratio: 1;
+		object-fit: cover;
+		width: 100%;
+		border-radius: 0;
+	}
+
+	/* Lead paragraph — Newsreader 400, slightly larger */
+	.is-style-selvedge-lead {
+		font-family: var(--wp--preset--font-family--newsreader) !important;
+		font-size: var(--wp--preset--font-size--md) !important;
+		font-weight: 400 !important;
+		font-optical-sizing: auto !important;
+		line-height: 1.6 !important;
+		color: var(--wp--preset--color--ink-secondary) !important;
+	}
+
+	/* Draft-notation heading — Newsreader italic with weld at heading size.
+	   WCAG: weld at ≥24px (h4+) achieves 3.9:1 — AA large text compliant.
+	   Never apply is-style-selvedge-draft-notation to body text or h6. */
+	.is-style-selvedge-draft-notation {
+		font-family: var(--wp--preset--font-family--newsreader) !important;
+		font-style: italic !important;
+		font-optical-sizing: auto !important;
+		/* weld color applied in context above; fallback for standalone use: */
+		color: var(--wp--preset--color--weld) !important;
+	}
+
+	/* Workshop card */
+	.selvedge-workshop-card {
+		background: var(--wp--preset--color--ground-mid);
+		padding: var(--wp--preset--spacing--6);
+		border-block-start: 2px solid var(--wp--preset--color--indigo);
+		transition: background 0.15s ease;
+	}
+	.selvedge-workshop-card:hover { background: var(--wp--preset--color--indigo-light); }
+}
+
+/* =====================================================================
+   LAYER: blocks
+   ===================================================================== */
+@layer blocks {
+
+	.wp-block-navigation a:hover {
+		text-decoration: none;
+		color: var(--wp--preset--color--indigo);
+	}
+
+	.wp-block-post-title a:hover {
+		text-decoration: none;
+		color: var(--wp--preset--color--indigo);
+	}
+
+	.wp-block-post-featured-image img { border-radius: 0; }
+
+	.wp-block-separator {
+		border-color: var(--wp--preset--color--rule);
+		max-inline-size: 100%;
+	}
+
+	/* Quote: Newsreader italic, ground-deep left border */
+	.wp-block-quote {
+		font-family: var(--wp--preset--font-family--newsreader);
+		font-style: italic;
+		font-optical-sizing: auto;
+	}
+
+	/* Post terms: indigo, tracked all-caps */
+	.wp-block-post-terms {
+		font-family: var(--wp--preset--font-family--jakarta);
+		font-size: var(--wp--preset--font-size--2xs);
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--wp--preset--color--indigo);
+	}
+
+	/* Gallery: no gap rounding */
+	.wp-block-gallery .wp-block-image img { border-radius: 0; }
+
+	/* Media-text editorial hero: equal column minimum */
+	.wp-block-media-text { align-items: start; }
+}
+
+/* =====================================================================
+   LAYER: utilities
+   ===================================================================== */
+@layer utilities {
+
+	.selvedge-band--ground-mid { background: var(--wp--preset--color--ground-mid); }
+	.selvedge-band--ground-deep { background: var(--wp--preset--color--ground-deep); }
+
+	.selvedge-band--indigo {
+		background: var(--wp--preset--color--indigo);
+		color: var(--wp--preset--color--white);
+		--cl-focus-ring: var(--cl-focus-ring-inverse);
+	}
+	.selvedge-band--indigo a { color: var(--wp--preset--color--white); }
+	.selvedge-band--indigo a:hover { color: var(--wp--preset--color--indigo-light); }
+
+	.selvedge-band--indigo-light { background: var(--wp--preset--color--indigo-light); }
+	.selvedge-band--ground { background: var(--wp--preset--color--ground); }
+}
+
+/* ── Print ──────────────────────────────────────────────────────────────────
+   Hide chrome; show clean reading content.
+   ─────────────────────────────────────────────────────────────────────────── */
+@media print {
+  .wp-block-navigation,
+  .wp-block-site-logo,
+  .wp-site-blocks > footer,
+  [data-wp-interactive] { display: none !important; }
+
+  body,
+  .wp-site-blocks {
+    font-size: 12pt;
+    color: #000 !important;
+    background: #fff !important;
+    max-width: 100% !important;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+  }
+}
