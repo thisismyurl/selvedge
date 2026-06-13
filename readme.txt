@@ -5,7 +5,7 @@ Tags: portfolio, e-commerce, blog, full-site-editing, block-patterns, custom-col
 Tested up to: 7.0
 Requires at least: 6.5
 Requires PHP: 8.1
-Stable tag: 1.158.1749
+Stable tag: 1.6163.2237
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,6 +53,17 @@ Newsreader and Plus Jakarta Sans are bundled as WOFF2 files in assets/fonts/ and
 In textile arts publishing, the work and the word have equal weight. Full-bleed imagery treats photography as decoration; the media-text split treats it as argument. The image earns its column; the editorial copy earns the one beside it.
 
 == Changelog ==
+
+= 1.6163.2237 =
+* Accessibility (WCAG 2.1 1.3.1): the archive and search titles are now explicit
+  h1 headings; the index template gains an h1 page heading; the blank-canvas page
+  template gains an empty, editor-fillable h1. (Front page and 404 already had one.)
+* Hardened comment-form attribute injection: a guarded preg_replace (single
+  replacement, null-check, no-match fallback) replaces a naive str_replace that
+  could double-inject or mangle markup.
+* oEmbed content width now reads theme.json contentSize (pixel-validated, 720px
+  fallback) instead of a hardcoded literal.
+* The Get started developer-guide URL is filterable via selvedge/developer_guide_url.
 
 = 1.158.1749 =
 * Initial release.
