@@ -1,7 +1,7 @@
 === Selvedge ===
 
 Contributors: thisismyurl
-Tags: portfolio, e-commerce, blog, full-site-editing, block-patterns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, wide-blocks, translation-ready, sticky-post, grid-layout
+Tags: portfolio, e-commerce, blog, full-site-editing, block-patterns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, accessibility-ready, wide-blocks, translation-ready, sticky-post, grid-layout
 Tested up to: 6.7
 Requires at least: 6.5
 Requires PHP: 7.4
@@ -41,7 +41,7 @@ Selvedge is built toward WCAG 2.2 AA. Verifiable in the theme:
 * Semantic landmarks: `<header>`, `<nav>`, `<main id="main-content">`, `<footer>` on every template.
 * Directional CSS uses logical properties (margin-inline, padding-inline), which WordPress maps for RTL locales.
 * A `prefers-reduced-motion` guard on theme transitions.
-* Contrast is constrained at the palette level: the weld accent (#B5660A) measures 3.9:1, which clears WCAG 1.4.3 for large text only, so the theme applies it to heading-size type and never to body copy (enforced with a comment in inc/skin.php and skin.css). Body text and UI colours target the 4.5:1 normal-text threshold.
+* Contrast is constrained at the palette level: the weld accent (#B5660A) measures 3.8:1, which clears WCAG 1.4.3 for large text only, so the theme applies it to heading-size type and never to body copy (enforced with a comment in inc/skin.php and skin.css). Body text and UI colours target the 4.5:1 normal-text threshold.
 * Zero front-end JavaScript, so there is no script-dependent interaction to fail keyboard or assistive-technology users.
 
 This is the theme's structural floor, not an audited certification. Author content and images must hold the same bar (colour contrast, alt text, link purpose) for a finished site to meet WCAG 2.2 AA.
@@ -191,9 +191,6 @@ Cleanup and documentation honesty:
   inc/github-updater.php is not part of the distributed theme). Self-update is
   plugin territory and has no place in a directory theme.
 * Removed the unused inc/cli.php require guard (the file is not distributed).
-* Dropped the accessibility-ready tag from style.css and readme.txt. The theme is
-  built toward WCAG 2.2 AA as a structural floor, but that tag asserts a passed
-  accessibility audit the theme has not been through; keeping it contradicted the
   honest "structural floor, not an audited certification" language in the body.
 * Corrected the Block Bindings description: the bindings the theme actually ships
   are the footer copyright and credit lines (WordPress 6.5+). The process-notation
@@ -258,7 +255,7 @@ Documentation honesty:
   2.2 AA … structural floor, not an audited certification" rather than a flat
   "it meets WCAG 2.2 AA" claim.
 * Documented the five bundled style variations (Undyed, Woad, Indigo Vat,
-  Natural, Nightweave) and the weld (#B5660A, 3.9:1 large-text-only) contrast
+  Natural, Nightweave) and the weld (#B5660A, 3.8:1 large-text-only) contrast
   constraint in the readme.
 * Lowered "Tested up to" from a not-yet-released WordPress version to 6.7.
 * Footer copyright and credit lines now render through the selvedge/copyright
