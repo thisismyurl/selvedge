@@ -15,10 +15,10 @@
 	<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|8"},"blockGap":"var:preset|spacing|2"},"border":{"bottom":{"color":"var:preset|color|rule","style":"solid","width":"1px"}}},"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"baseline"}} -->
 	<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--8);border-bottom:1px solid var(--wp--preset--color--rule)">
 		<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontWeight":"600","fontSize":"var:preset|font-size|xl","letterSpacing":"-0.015em","fontOpticalSizing":"auto"},"color":{"text":"var:preset|color|ink"}}} -->
-		<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--xl);letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--ink)">Material Archive</h2>
+		<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--xl);letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--ink)"><?php esc_html_e( 'Material Archive', 'selvedge' ); ?></h2>
 		<!-- /wp:heading -->
 		<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.08em","textTransform":"uppercase"},"color":{"text":"var:preset|color|ink-muted"}}} -->
-		<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted)">Dyed · woven · warp-planned</p>
+		<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted)"><?php esc_html_e( 'Dyed · woven · warp-planned', 'selvedge' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
@@ -29,43 +29,43 @@
 
 		<!-- wp:image {"className":"is-style-selvedge-swatch"} -->
 		<figure class="wp-block-image is-style-selvedge-swatch">
-			<img src="" alt="Weld on undyed linen — 15% alum mordant" />
-			<figcaption class="is-style-selvedge-colophon wp-element-caption">Weld on undyed linen · alum mordant 15% WOF · Reseda luteola 200% WOF</figcaption>
+			<img src="" alt="<?php esc_attr_e( 'Weld on undyed linen — 15% alum mordant', 'selvedge' ); ?>" />
+			<figcaption class="is-style-selvedge-colophon wp-element-caption"><?php esc_html_e( 'Weld on undyed linen · alum mordant 15% WOF · Reseda luteola 200% WOF', 'selvedge' ); ?></figcaption>
 		</figure>
 		<!-- /wp:image -->
 
 		<!-- wp:image {"className":"is-style-selvedge-swatch"} -->
 		<figure class="wp-block-image is-style-selvedge-swatch">
-			<img src="" alt="Madder on wool — alum mordant, iron afterbath" />
-			<figcaption class="is-style-selvedge-colophon wp-element-caption">Madder root on natural fleece · alum 20% WOF · iron afterbath 2% WOF</figcaption>
+			<img src="" alt="<?php esc_attr_e( 'Madder on wool — alum mordant, iron afterbath', 'selvedge' ); ?>" />
+			<figcaption class="is-style-selvedge-colophon wp-element-caption"><?php esc_html_e( 'Madder root on natural fleece · alum 20% WOF · iron afterbath 2% WOF', 'selvedge' ); ?></figcaption>
 		</figure>
 		<!-- /wp:image -->
 
 		<!-- wp:image {"className":"is-style-selvedge-swatch"} -->
 		<figure class="wp-block-image is-style-selvedge-swatch">
-			<img src="" alt="Indigo vat on bleached cotton" />
-			<figcaption class="is-style-selvedge-colophon wp-element-caption">Indigo fermentation vat · bleached cotton · 6 dip sequence</figcaption>
+			<img src="" alt="<?php esc_attr_e( 'Indigo vat on bleached cotton', 'selvedge' ); ?>" />
+			<figcaption class="is-style-selvedge-colophon wp-element-caption"><?php esc_html_e( 'Indigo fermentation vat · bleached cotton · 6 dip sequence', 'selvedge' ); ?></figcaption>
 		</figure>
 		<!-- /wp:image -->
 
 		<!-- wp:image {"className":"is-style-selvedge-swatch"} -->
 		<figure class="wp-block-image is-style-selvedge-swatch">
-			<img src="" alt="Black walnut hull on naturally dyed warp" />
-			<figcaption class="is-style-selvedge-colophon wp-element-caption">Black walnut hull · no mordant required · woven 2/2 twill on undyed warp</figcaption>
+			<img src="" alt="<?php esc_attr_e( 'Black walnut hull on naturally dyed warp', 'selvedge' ); ?>" />
+			<figcaption class="is-style-selvedge-colophon wp-element-caption"><?php esc_html_e( 'Black walnut hull · no mordant required · woven 2/2 twill on undyed warp', 'selvedge' ); ?></figcaption>
 		</figure>
 		<!-- /wp:image -->
 
 		<!-- wp:image {"className":"is-style-selvedge-swatch"} -->
 		<figure class="wp-block-image is-style-selvedge-swatch">
-			<img src="" alt="Onion skin on wool — chrome mordant" />
-			<figcaption class="is-style-selvedge-colophon wp-element-caption">Onion skin on scoured fleece · chrome mordant 3% WOF · gold-olive result</figcaption>
+			<img src="" alt="<?php esc_attr_e( 'Onion skin on wool — chrome mordant', 'selvedge' ); ?>" />
+			<figcaption class="is-style-selvedge-colophon wp-element-caption"><?php esc_html_e( 'Onion skin on scoured fleece · chrome mordant 3% WOF · gold-olive result', 'selvedge' ); ?></figcaption>
 		</figure>
 		<!-- /wp:image -->
 
 		<!-- wp:image {"className":"is-style-selvedge-swatch"} -->
 		<figure class="wp-block-image is-style-selvedge-swatch">
-			<img src="" alt="Overdye: weld on indigo-dyed linen" />
-			<figcaption class="is-style-selvedge-colophon wp-element-caption">Overdye — weld on indigo ground · linen · produces tertiary green-teal</figcaption>
+			<img src="" alt="<?php esc_attr_e( 'Overdye: weld on indigo-dyed linen', 'selvedge' ); ?>" />
+			<figcaption class="is-style-selvedge-colophon wp-element-caption"><?php esc_html_e( 'Overdye — weld on indigo ground · linen · produces tertiary green-teal', 'selvedge' ); ?></figcaption>
 		</figure>
 		<!-- /wp:image -->
 

@@ -21,7 +21,7 @@
         },
         {
           "slug": "ink-muted",
-          "color": "#7A7168",
+          "color": "#5E554C",
           "name": "Ink Muted"
         },
         {
@@ -68,6 +68,26 @@
           "slug": "white",
           "color": "#FFFFFF",
           "name": "White"
+        },
+        {
+          "slug": "footer-bg",
+          "color": "#1A1612",
+          "name": "Footer Ground (edition-stable dark)"
+        },
+        {
+          "slug": "footer-fg",
+          "color": "#F5F0E8",
+          "name": "Footer Text (edition-stable light)"
+        },
+        {
+          "slug": "footer-meta",
+          "color": "#C9C2B6",
+          "name": "Footer Meta (edition-stable muted light)"
+        },
+        {
+          "slug": "footer-accent",
+          "color": "#E0954A",
+          "name": "Footer Accent (edition-stable, large/UI only)"
         }
       ],
       "gradients": []
@@ -114,29 +134,20 @@
           "fontFace": [
             {
               "fontFamily": "Plus Jakarta Sans",
-              "fontWeight": "400",
+              "fontWeight": "200 800",
               "fontStyle": "normal",
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/plus-jakarta-sans/plus-jakarta-sans-400.woff2"
+                "file:./assets/fonts/plus-jakarta-sans/plus-jakarta-sans-variable.woff2"
               ]
             },
             {
               "fontFamily": "Plus Jakarta Sans",
-              "fontWeight": "500",
-              "fontStyle": "normal",
+              "fontWeight": "200 800",
+              "fontStyle": "italic",
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/plus-jakarta-sans/plus-jakarta-sans-500.woff2"
-              ]
-            },
-            {
-              "fontFamily": "Plus Jakarta Sans",
-              "fontWeight": "600",
-              "fontStyle": "normal",
-              "fontDisplay": "swap",
-              "src": [
-                "file:./assets/fonts/plus-jakarta-sans/plus-jakarta-sans-600.woff2"
+                "file:./assets/fonts/plus-jakarta-sans/plus-jakarta-sans-variable-italic.woff2"
               ]
             }
           ]
@@ -484,12 +495,14 @@
         },
         ":hover": {
           "color": {
-            "background": "var(--wp--preset--color--ink)"
+            "background": "var(--wp--preset--color--footer-bg)",
+            "text": "var(--wp--preset--color--footer-fg)"
           }
         },
         ":focus": {
           "color": {
-            "background": "var(--wp--preset--color--ink)"
+            "background": "var(--wp--preset--color--footer-bg)",
+            "text": "var(--wp--preset--color--footer-fg)"
           }
         }
       }

@@ -22,7 +22,7 @@
         },
         {
           "slug": "ink-muted",
-          "color": "#8c8880",
+          "color": "#9CB0BC",
           "name": "Ink Muted"
         },
         {
@@ -37,23 +37,43 @@
         },
         {
           "slug": "ground-mid",
-          "color": "#c8c4bc",
+          "color": "#1C2738",
           "name": "Ground Mid"
         },
         {
           "slug": "ground-deep",
-          "color": "#b0aca4",
+          "color": "#22304A",
           "name": "Ground Deep"
         },
         {
           "slug": "indigo",
-          "color": "#7ab0cc",
+          "color": "#9CCBE2",
           "name": "Indigo"
         },
         {
           "slug": "indigo-light",
           "color": "#284058",
           "name": "Indigo Light"
+        },
+        {
+          "slug": "footer-bg",
+          "color": "#101826",
+          "name": "Footer Ground (edition-stable dark)"
+        },
+        {
+          "slug": "footer-fg",
+          "color": "#e0dcd4",
+          "name": "Footer Text (edition-stable light)"
+        },
+        {
+          "slug": "footer-meta",
+          "color": "#A6BCCA",
+          "name": "Footer Meta (edition-stable muted light)"
+        },
+        {
+          "slug": "footer-accent",
+          "color": "#9CCBE2",
+          "name": "Footer Accent (edition-stable, large/UI only)"
         }
       ]
     }
@@ -62,6 +82,14 @@
     "color": {
       "background": "var(--wp--preset--color--ground)",
       "text": "var(--wp--preset--color--ink)"
+    },
+    "elements": {
+      "button": {
+        "color": {
+          "background": "var(--wp--preset--color--indigo)",
+          "text": "var(--wp--preset--color--ground)"
+        }
+      }
     }
   }
 }

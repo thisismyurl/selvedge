@@ -15,25 +15,25 @@
 	<div class="wp-block-group selvedge-nav__bar" style="border-bottom:1px solid var(--wp--preset--color--rule);padding-bottom:var(--wp--preset--spacing--6)">
 
 		<!-- wp:heading {"level":1,"className":"selvedge-nav__brand","style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontWeight":"600","fontStyle":"italic","fontSize":"var:preset|font-size|xl","letterSpacing":"-0.015em","fontOpticalSizing":"auto"},"color":{"text":"var:preset|color|ink"},"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-		<h1 class="selvedge-nav__brand" style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-style:italic;font-size:var(--wp--preset--font-size--xl);letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--ink)"><a href="/" style="color:inherit;text-decoration:none">Selvedge</a></h1>
+		<h1 class="selvedge-nav__brand" style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-style:italic;font-size:var(--wp--preset--font-size--xl);letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--ink)"><a href="/" style="color:inherit;text-decoration:none"><?php esc_html_e( 'Selvedge', 'selvedge' ); ?></a></h1>
 		<!-- /wp:heading -->
 
 		<!-- wp:group {"className":"selvedge-nav__links","style":{"spacing":{"blockGap":"var:preset|spacing|8"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
 		<div class="wp-block-group selvedge-nav__links">
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|sm","fontWeight":"500"},"color":{"text":"var:preset|color|ink-secondary"},"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-			<p style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:500;color:var(--wp--preset--color--ink-secondary)"><a href="/studio" style="color:inherit;text-decoration:none">Studio</a></p>
+			<p style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:500;color:var(--wp--preset--color--ink-secondary)"><a href="/studio" style="color:inherit;text-decoration:none"><?php esc_html_e( 'Studio', 'selvedge' ); ?></a></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|sm","fontWeight":"500"},"color":{"text":"var:preset|color|ink-secondary"},"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-			<p style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:500;color:var(--wp--preset--color--ink-secondary)"><a href="/work" style="color:inherit;text-decoration:none">Work</a></p>
+			<p style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:500;color:var(--wp--preset--color--ink-secondary)"><a href="/work" style="color:inherit;text-decoration:none"><?php esc_html_e( 'Work', 'selvedge' ); ?></a></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|sm","fontWeight":"500"},"color":{"text":"var:preset|color|ink-secondary"},"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-			<p style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:500;color:var(--wp--preset--color--ink-secondary)"><a href="/journal" style="color:inherit;text-decoration:none">Journal</a></p>
+			<p style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:500;color:var(--wp--preset--color--ink-secondary)"><a href="/journal" style="color:inherit;text-decoration:none"><?php esc_html_e( 'Journal', 'selvedge' ); ?></a></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|sm","fontWeight":"500"},"color":{"text":"var:preset|color|ink-secondary"},"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-			<p style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:500;color:var(--wp--preset--color--ink-secondary)"><a href="/shop" style="color:inherit;text-decoration:none">Shop</a></p>
+			<p style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:500;color:var(--wp--preset--color--ink-secondary)"><a href="/shop" style="color:inherit;text-decoration:none"><?php esc_html_e( 'Shop', 'selvedge' ); ?></a></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|sm","fontWeight":"600"},"color":{"text":"var:preset|color|indigo"},"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-			<p style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:600;color:var(--wp--preset--color--indigo)"><a href="/contact" style="color:inherit;text-decoration:none">Contact</a></p>
+			<p style="margin-top:0;margin-bottom:0;font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:600;color:var(--wp--preset--color--indigo)"><a href="/contact" style="color:inherit;text-decoration:none"><?php esc_html_e( 'Contact', 'selvedge' ); ?></a></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

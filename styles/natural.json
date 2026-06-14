@@ -17,7 +17,7 @@
         },
         {
           "slug": "ink-muted",
-          "color": "#8A7060",
+          "color": "#6E5848",
           "name": "Ink Muted"
         },
         {
@@ -42,7 +42,7 @@
         },
         {
           "slug": "indigo",
-          "color": "#8A7050",
+          "color": "#6E5638",
           "name": "Indigo"
         },
         {
@@ -64,6 +64,26 @@
           "slug": "white",
           "color": "#FFFFFF",
           "name": "White"
+        },
+        {
+          "slug": "footer-bg",
+          "color": "#2A1E14",
+          "name": "Footer Ground (edition-stable dark)"
+        },
+        {
+          "slug": "footer-fg",
+          "color": "#FAF7F2",
+          "name": "Footer Text (edition-stable light)"
+        },
+        {
+          "slug": "footer-meta",
+          "color": "#C8B8A0",
+          "name": "Footer Meta (edition-stable muted light)"
+        },
+        {
+          "slug": "footer-accent",
+          "color": "#D89E5E",
+          "name": "Footer Accent (edition-stable, large/UI only)"
         }
       ]
     },

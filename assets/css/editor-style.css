@@ -11,25 +11,25 @@
    first tool.
    ===================================================================== */
 
-/* Mirror the selvedge-eyebrow component for the editor preview */
+/* Mirror the eyebrow label for the editor preview */
 .editor-styles-wrapper .is-style-selvedge-eyebrow {
 	font-size: 0.6875rem;
 	font-weight: 600;
 	letter-spacing: 0.14em;
 	text-transform: uppercase;
-	color: #6b6b68;
+	color: var(--wp--preset--color--ink-muted);
 }
 
-/* Mirror the annotation style */
+/* Mirror the annotation note */
 .editor-styles-wrapper .is-style-selvedge-annotation {
 	font-size: 0.75rem;
 	letter-spacing: 0.06em;
-	color: #6b6b68;
+	line-height: 1.7;
+	color: var(--wp--preset--color--ink-muted);
 }
 
-/* Directory entry: top rule visible in editor */
-.editor-styles-wrapper .is-style-selvedge-directory-entry {
-	border-top: 1px solid #d6d3cc;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+/* Mirror the specimen display heading */
+.editor-styles-wrapper .is-style-selvedge-specimen-display {
+	font-family: "Newsreader", Georgia, serif;
+	line-height: 1;
 }

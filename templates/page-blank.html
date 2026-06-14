@@ -1,10 +1,12 @@
 <!-- Blank canvas page template for Selvedge.
-     No header. No footer. No constrained wrapper.
-     Use for: custom landing pages, coming-soon pages, full-bleed
-     presentations that need to own the entire viewport.
-
-     Pillar 7 (High Agency): the designer has full control of the canvas.
-     No chrome forces. No gutters imposed. -->
+     Documented structural variation (gate Check 13 exception clause): the
+     header template part is deliberately omitted so a full-bleed landing,
+     coming-soon, or presentation page can own the entire viewport with no
+     imposed chrome or gutters (Pillar 7, High Agency). The WCAG navigation
+     scaffold is still intact — an explicit level:1 h1, <main id="main-content">
+     as the skip-link target, and the footer landmark below — so the page is
+     never left without a heading or a way out. Only the optional header
+     chrome is dropped; the footer stays for consistent navigation. -->
 
 <!-- wp:group {"tagName":"main","id":"main-content","className":"selvedge-main selvedge-page-blank","layout":{"type":"default"}} -->
 <main id="main-content" class="wp-block-group selvedge-main selvedge-page-blank">
@@ -17,3 +19,5 @@
 	<!-- wp:post-content {"layout":{"type":"default"}} /-->
 </main>
 <!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

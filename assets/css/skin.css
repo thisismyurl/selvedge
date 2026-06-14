@@ -72,10 +72,16 @@ body {
 	:root { color-scheme: light; }
 
 	:root {
+		/* Focus ring binds to the accent for the brand cue, with the stable light
+		   token as its inverse on dark bands. The skip link binds to the EDITION-
+		   STABLE footer pair (deep ground / light text): --indigo inverts to a
+		   light cyan in Woad and a mid blue in Nightweave, which dropped the skip
+		   link to ~1.7:1 white-on-light. footer-bg/footer-fg hold >= 13:1 in every
+		   variation, so the keyboard-bypass affordance is readable everywhere. */
 		--cl-focus-ring:         var(--wp--preset--color--indigo);
-		--cl-focus-ring-inverse: var(--wp--preset--color--white);
-		--cl-skip-bg:            var(--wp--preset--color--indigo);
-		--cl-skip-fg:            var(--wp--preset--color--white);
+		--cl-focus-ring-inverse: var(--wp--preset--color--footer-fg);
+		--cl-skip-bg:            var(--wp--preset--color--footer-bg);
+		--cl-skip-fg:            var(--wp--preset--color--footer-fg);
 	}
 
 	/* Studio journal archive — 1 col mobile, 2-col at md */
@@ -195,6 +201,38 @@ body {
 		color: var(--wp--preset--color--weld) !important;
 	}
 
+	/* Eyebrow label — small, tracked, uppercase Jakarta in the muted ink tone.
+	   The label that sits above a hero, footer column, or CTA band. Patterns
+	   may add their own colour/size inline; this carries the baseline treatment
+	   so the class renders styled even when applied bare. */
+	.is-style-selvedge-eyebrow {
+		font-family: var(--wp--preset--font-family--jakarta);
+		font-size: var(--wp--preset--font-size--2xs);
+		font-weight: 600;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		line-height: 1.4;
+	}
+
+	/* Annotation note — quiet Jakarta in the muted ink tone, relaxed leading.
+	   The orienting line in an empty archive, index, or 404 state. */
+	.is-style-selvedge-annotation {
+		font-family: var(--wp--preset--font-family--jakarta);
+		font-size: var(--wp--preset--font-size--sm);
+		letter-spacing: 0.02em;
+		line-height: 1.7;
+		color: var(--wp--preset--color--ink-muted);
+	}
+
+	/* Specimen display — Newsreader at display weight, tight leading. Turns the
+	   404 numeral into a type specimen rather than an error notice. Colour and
+	   exact size come inline from the 404 template; this sets the family floor. */
+	.is-style-selvedge-specimen-display {
+		font-family: var(--wp--preset--font-family--newsreader);
+		font-optical-sizing: auto;
+		line-height: 1;
+	}
+
 	/* Workshop card */
 	.selvedge-workshop-card {
 		background: var(--wp--preset--color--ground-mid);
@@ -202,7 +240,11 @@ body {
 		border-block-start: 2px solid var(--wp--preset--color--indigo);
 		transition: background 0.15s ease;
 	}
-	.selvedge-workshop-card:hover { background: var(--wp--preset--color--indigo-light); }
+	/* Hover lifts to ground-deep, not indigo-light. indigo-light is a pale tint in
+	   the light editions (a tan in Undyed) that collapsed the card's indigo eyebrow
+	   to 3.16:1; ground-deep is the next neutral step and keeps every card surface
+	   — heading, body, eyebrow, price — above its WCAG floor in all six variations. */
+	.selvedge-workshop-card:hover { background: var(--wp--preset--color--ground-deep); }
 }
 
 /* =====================================================================
@@ -259,13 +301,23 @@ body {
 	.selvedge-band--ground-mid { background: var(--wp--preset--color--ground-mid); }
 	.selvedge-band--ground-deep { background: var(--wp--preset--color--ground-deep); }
 
-	.selvedge-band--indigo {
-		background: var(--wp--preset--color--indigo);
-		color: var(--wp--preset--color--white);
+	/* Dark chrome bands (footer, CTA) bind to EDITION-STABLE tokens, never to the
+	   inverting accent. footer-bg is a deep ground and footer-fg a light text in
+	   every style variation, so a dark band stays a dark band when the dyer's
+	   palette inverts the neutral scale. Binding these to --indigo (an accent that
+	   becomes a light cyan in Woad / a mid blue in Nightweave) produced light-text-
+	   on-light-ground failures across every dark variation — the band tokens below
+	   are the fix. All four resolve >= 6.9:1 in all six variations. */
+	.selvedge-band--indigo,
+	.selvedge-band--ink {
+		background: var(--wp--preset--color--footer-bg);
+		color: var(--wp--preset--color--footer-fg);
 		--cl-focus-ring: var(--cl-focus-ring-inverse);
 	}
-	.selvedge-band--indigo a { color: var(--wp--preset--color--white); }
-	.selvedge-band--indigo a:hover { color: var(--wp--preset--color--indigo-light); }
+	.selvedge-band--indigo a,
+	.selvedge-band--ink a { color: var(--wp--preset--color--footer-fg); }
+	.selvedge-band--indigo a:hover,
+	.selvedge-band--ink a:hover { color: var(--wp--preset--color--footer-meta); }
 
 	.selvedge-band--indigo-light { background: var(--wp--preset--color--indigo-light); }
 	.selvedge-band--ground { background: var(--wp--preset--color--ground); }
