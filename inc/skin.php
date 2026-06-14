@@ -20,11 +20,6 @@ namespace Selvedge;
 
 defined( 'ABSPATH' ) || exit;
 
-// Opt this theme into GitHub-release self-updates (see inc/github-updater.php).
-add_filter( 'selvedge/github_updater_repo', static function (): string {{
-	return 'thisismyurl/selvedge';
-}} );
-
 /**
  * Register Selvedge's image crop sizes.
  *
@@ -120,6 +115,38 @@ function skin_block_styles(): void {
 		array(
 			'name'  => 'selvedge-draft-notation',
 			'label' => __( 'Draft notation heading', 'selvedge' ),
+		)
+	);
+
+	// [SKIN] Paragraph as an editorial eyebrow — small, Jakarta 600, tracked,
+	// uppercase, ink-muted. The label above a hero, footer column, or CTA band
+	// (editorial-hero overline, studio-footer Navigate/Visit, subscribe-cta).
+	register_block_style(
+		'core/paragraph',
+		array(
+			'name'  => 'selvedge-eyebrow',
+			'label' => __( 'Eyebrow label', 'selvedge' ),
+		)
+	);
+
+	// [SKIN] Paragraph as a quiet annotation — small Jakarta, ink-muted, relaxed
+	// leading. The orienting note in empty archive/index/404 states.
+	register_block_style(
+		'core/paragraph',
+		array(
+			'name'  => 'selvedge-annotation',
+			'label' => __( 'Annotation note', 'selvedge' ),
+		)
+	);
+
+	// [SKIN] Heading as a specimen display — Newsreader at display scale in the
+	// rule tone. The oversized "404" that turns the error page into a type
+	// specimen rather than an apology.
+	register_block_style(
+		'core/heading',
+		array(
+			'name'  => 'selvedge-specimen-display',
+			'label' => __( 'Specimen display', 'selvedge' ),
 		)
 	);
 }

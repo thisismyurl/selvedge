@@ -35,16 +35,17 @@
 			<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10);border-bottom:1px solid var(--wp--preset--color--rule)">
 				<!-- wp:template-part {"slug":"post-meta","tagName":"div"} /-->
 				<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontWeight":"400","fontSize":"var:preset|font-size|2xl","letterSpacing":"-0.01em","textDecoration":"none"},"color":{"text":"var:preset|color|ink"}}} /-->
-				<!-- wp:post-excerpt {"moreText":"Read more","style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","lineHeight":"1.7"},"color":{"text":"var:preset|color|ink"}}} /-->
+				<!-- wp:post-excerpt {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","lineHeight":"1.7"},"color":{"text":"var:preset|color|ink"}}} /-->
 			</div>
 			<!-- /wp:group -->
 
 		<!-- /wp:post-template -->
 
+		<!-- No-results state: the query-title h1 and term description above
+		     orient the visitor; a search form gives a clear next action. No
+		     hardcoded prose, so non-English sites never see English text. -->
 		<!-- wp:query-no-results -->
-			<!-- wp:paragraph {"className":"is-style-selvedge-annotation","style":{"spacing":{"padding":{"top":"var:preset|spacing|12","bottom":"var:preset|spacing|12"}}}} -->
-			<p class="is-style-selvedge-annotation" style="padding-top:var(--wp--preset--spacing--12);padding-bottom:var(--wp--preset--spacing--12)">Nothing in this archive yet.</p>
-			<!-- /wp:paragraph -->
+			<!-- wp:search {"buttonUseIcon":true,"style":{"spacing":{"padding":{"top":"var:preset|spacing|12","bottom":"var:preset|spacing|12"}},"typography":{"fontFamily":"var:preset|font-family|jakarta"}}} /-->
 		<!-- /wp:query-no-results -->
 
 		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->

@@ -15,10 +15,10 @@
 	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|4","padding":{"bottom":"var:preset|spacing|10"}}},"layout":{"type":"constrained","contentSize":"680px"}} -->
 	<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--10)">
 		<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|ink-muted"}}} -->
-		<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted)">Studio Method</p>
+		<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted)"><?php esc_html_e( 'Studio Method', 'selvedge' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontWeight":"600","fontSize":"var:preset|font-size|3xl","lineHeight":"1.1","letterSpacing":"-0.015em","fontOpticalSizing":"auto"},"color":{"text":"var:preset|color|ink"}}} -->
-		<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--3xl);line-height:1.1;letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--ink)">Weld on undyed warp: a process sequence</h2>
+		<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--3xl);line-height:1.1;letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--ink)"><?php esc_html_e( 'Weld on undyed warp: a process sequence', 'selvedge' ); ?></h2>
 		<!-- /wp:heading -->
 	</div>
 	<!-- /wp:group -->
@@ -31,10 +31,10 @@
 		<!-- wp:group {"className":"is-style-selvedge-notation","layout":{"type":"default"},"style":{"spacing":{"blockGap":"var:preset|spacing|3"}}} -->
 		<div class="wp-block-group is-style-selvedge-notation">
 			<!-- wp:heading {"level":3,"className":"is-style-selvedge-draft-notation","style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontStyle":"italic","fontSize":"var:preset|font-size|xl","fontOpticalSizing":"auto","lineHeight":"1.2"}}} -->
-			<h3 class="is-style-selvedge-draft-notation" style="font-family:var(--wp--preset--font-family--newsreader);font-style:italic;font-size:var(--wp--preset--font-size--xl);font-optical-sizing:auto;line-height:1.2">Warp planning &amp; sett</h3>
+			<h3 class="is-style-selvedge-draft-notation" style="font-family:var(--wp--preset--font-family--newsreader);font-style:italic;font-size:var(--wp--preset--font-size--xl);font-optical-sizing:auto;line-height:1.2"><?php esc_html_e( 'Warp planning & sett', 'selvedge' ); ?></h3>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|base","lineHeight":"1.7"},"color":{"text":"var:preset|color|ink-secondary"}}} -->
-			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--base);line-height:1.7;color:var(--wp--preset--color--ink-secondary)">Weld is a transparent dye — its value shifts dramatically with the ground it lands on. Begin with the warp colour decision: undyed linen gives a warm, greenish-yellow; bleached cotton moves the result toward a cleaner chrome. Thread count (sett) determines how much ground shows through the weave structure, which in turn sets the saturation ceiling.</p>
+			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--base);line-height:1.7;color:var(--wp--preset--color--ink-secondary)"><?php esc_html_e( 'Weld is a transparent dye — its value shifts dramatically with the ground it lands on. Begin with the warp colour decision: undyed linen gives a warm, greenish-yellow; bleached cotton moves the result toward a cleaner chrome. Thread count (sett) determines how much ground shows through the weave structure, which in turn sets the saturation ceiling.', 'selvedge' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -43,10 +43,10 @@
 		<!-- wp:group {"className":"is-style-selvedge-notation","layout":{"type":"default"},"style":{"spacing":{"blockGap":"var:preset|spacing|3"}}} -->
 		<div class="wp-block-group is-style-selvedge-notation">
 			<!-- wp:heading {"level":3,"className":"is-style-selvedge-draft-notation","style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontStyle":"italic","fontSize":"var:preset|font-size|xl","fontOpticalSizing":"auto","lineHeight":"1.2"}}} -->
-			<h3 class="is-style-selvedge-draft-notation" style="font-family:var(--wp--preset--font-family--newsreader);font-style:italic;font-size:var(--wp--preset--font-size--xl);font-optical-sizing:auto;line-height:1.2">Mordanting</h3>
+			<h3 class="is-style-selvedge-draft-notation" style="font-family:var(--wp--preset--font-family--newsreader);font-style:italic;font-size:var(--wp--preset--font-size--xl);font-optical-sizing:auto;line-height:1.2"><?php esc_html_e( 'Mordanting', 'selvedge' ); ?></h3>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|base","lineHeight":"1.7"},"color":{"text":"var:preset|color|ink-secondary"}}} -->
-			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--base);line-height:1.7;color:var(--wp--preset--color--ink-secondary)">Alum (potassium aluminium sulphate) at 15–20% WOF. Dissolve in hot water, add fibre at 60°C, raise slowly to 80°C over 45 minutes, hold one hour. Exhaust the bath — discarding mordant solution is waste; the fibres take only what they need. Cool slowly in the bath before rinsing.</p>
+			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--base);line-height:1.7;color:var(--wp--preset--color--ink-secondary)"><?php esc_html_e( 'Alum (potassium aluminium sulphate) at 15–20% WOF. Dissolve in hot water, add fibre at 60°C, raise slowly to 80°C over 45 minutes, hold one hour. Exhaust the bath — discarding mordant solution is waste; the fibres take only what they need. Cool slowly in the bath before rinsing.', 'selvedge' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -55,10 +55,10 @@
 		<!-- wp:group {"className":"is-style-selvedge-notation","layout":{"type":"default"},"style":{"spacing":{"blockGap":"var:preset|spacing|3"}}} -->
 		<div class="wp-block-group is-style-selvedge-notation">
 			<!-- wp:heading {"level":3,"className":"is-style-selvedge-draft-notation","style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontStyle":"italic","fontSize":"var:preset|font-size|xl","fontOpticalSizing":"auto","lineHeight":"1.2"}}} -->
-			<h3 class="is-style-selvedge-draft-notation" style="font-family:var(--wp--preset--font-family--newsreader);font-style:italic;font-size:var(--wp--preset--font-size--xl);font-optical-sizing:auto;line-height:1.2">Weld bath</h3>
+			<h3 class="is-style-selvedge-draft-notation" style="font-family:var(--wp--preset--font-family--newsreader);font-style:italic;font-size:var(--wp--preset--font-size--xl);font-optical-sizing:auto;line-height:1.2"><?php esc_html_e( 'Weld bath', 'selvedge' ); ?></h3>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|base","lineHeight":"1.7"},"color":{"text":"var:preset|color|ink-secondary"}}} -->
-			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--base);line-height:1.7;color:var(--wp--preset--color--ink-secondary)">Fresh or dried Reseda luteola, 200% WOF for a full extraction. Simmer the plant material separately, strain, add fibres to the cooled liquor. Heat slowly to 80°C over 30 minutes, hold 45 minutes. The colour develops during the hold — do not rush the exhaust. Rinse in water of gradually decreasing temperature.</p>
+			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--base);line-height:1.7;color:var(--wp--preset--color--ink-secondary)"><?php esc_html_e( 'Fresh or dried Reseda luteola, 200% WOF for a full extraction. Simmer the plant material separately, strain, add fibres to the cooled liquor. Heat slowly to 80°C over 30 minutes, hold 45 minutes. The colour develops during the hold — do not rush the exhaust. Rinse in water of gradually decreasing temperature.', 'selvedge' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -67,13 +67,13 @@
 		<!-- wp:group {"className":"is-style-selvedge-notation","layout":{"type":"default"},"style":{"spacing":{"blockGap":"var:preset|spacing|3"}}} -->
 		<div class="wp-block-group is-style-selvedge-notation">
 			<!-- wp:heading {"level":3,"className":"is-style-selvedge-draft-notation","style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontStyle":"italic","fontSize":"var:preset|font-size|xl","fontOpticalSizing":"auto","lineHeight":"1.2"}}} -->
-			<h3 class="is-style-selvedge-draft-notation" style="font-family:var(--wp--preset--font-family--newsreader);font-style:italic;font-size:var(--wp--preset--font-size--xl);font-optical-sizing:auto;line-height:1.2">Finishing &amp; lightfastness</h3>
+			<h3 class="is-style-selvedge-draft-notation" style="font-family:var(--wp--preset--font-family--newsreader);font-style:italic;font-size:var(--wp--preset--font-size--xl);font-optical-sizing:auto;line-height:1.2"><?php esc_html_e( 'Finishing & lightfastness', 'selvedge' ); ?></h3>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|base","lineHeight":"1.7"},"color":{"text":"var:preset|color|ink-secondary"}}} -->
-			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--base);line-height:1.7;color:var(--wp--preset--color--ink-secondary)">Weld on alum-mordanted linen rates 5–6 on the Blue Wool scale — good lightfastness, not archival. Store away from direct light. A second mordant bath with iron (ferrous sulphate, 2% WOF) after dyeing will deepen the yellow toward olive and improve fastness by a half-grade.</p>
+			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--base);line-height:1.7;color:var(--wp--preset--color--ink-secondary)"><?php esc_html_e( 'Weld on alum-mordanted linen rates 5–6 on the Blue Wool scale — good lightfastness, not archival. Store away from direct light. A second mordant bath with iron (ferrous sulphate, 2% WOF) after dyeing will deepen the yellow toward olive and improve fastness by a half-grade.', 'selvedge' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"className":"is-style-selvedge-colophon","style":{"spacing":{"margin":{"top":"var:preset|spacing|4"}}}} -->
-			<p class="is-style-selvedge-colophon" style="margin-top:var(--wp--preset--spacing--4)">WOF = Weight of Fibre. All percentages by weight. Results vary with water chemistry and plant source.</p>
+			<p class="is-style-selvedge-colophon" style="margin-top:var(--wp--preset--spacing--4)"><?php esc_html_e( 'WOF = Weight of Fibre. All percentages by weight. Results vary with water chemistry and plant source.', 'selvedge' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

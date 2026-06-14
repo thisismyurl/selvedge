@@ -1,15 +1,15 @@
 # Copyright (C) 2026 Christopher Ross
-# This file is distributed under the same license as the Selvedge package.
+# This file is distributed under the same license as the Selvedge theme.
 msgid ""
 msgstr ""
-"Project-Id-Version: Selvedge 1.6148\n"
+"Project-Id-Version: Selvedge 1.6163.2237\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/selvedge\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-04T00:00:00+00:00\n"
+"POT-Creation-Date: 2026-06-13T00:00:00+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.x\n"
 "X-Domain: selvedge\n"
@@ -23,7 +23,7 @@ msgid "https://thisismyurl.com/selvedge/"
 msgstr ""
 
 #. Description of the theme
-msgid "A typography-first full-site-editing theme for type foundries, brand identity studios, and independent designers."
+msgid "A WordPress theme for textile arts publishing — the independent weaving studios, natural dye practitioners, and fibre arts editorial platforms that treat craft as scholarship. Newsreader for editorial authority; Plus Jakarta Sans for the confident interface layer. The studio journal is the editorial heart; the workshop listing is how work reaches the world. Built on the Colophon core: built toward WCAG 2.2 AA (skip link, visible focus, one h1 per template, semantic landmarks, reduced-motion guard), self-hosted SIL OFL fonts, RTL-ready via CSS logical properties, zero plugin dependencies."
 msgstr ""
 
 #. Author of the theme
@@ -34,95 +34,518 @@ msgstr ""
 msgid "https://thisismyurl.com/"
 msgstr ""
 
-#: inc/bindings.php
+#: inc/setup.php:71
+msgid "Primary Navigation"
+msgstr ""
+
+#: inc/setup.php:72
+msgid "Footer Navigation"
+msgstr ""
+
+#: inc/setup.php:209
+msgid "Skip to content"
+msgstr ""
+
+#: inc/bindings.php:40
 msgid "Copyright line"
 msgstr ""
 
-#: inc/bindings.php
+#: inc/bindings.php:49
 msgid "Footer credit line"
 msgstr ""
 
-#: inc/bindings.php
 #. translators: 1: four-digit year, 2: site title.
+#: inc/bindings.php:82
 msgid "© %1$s %2$s. All rights reserved."
 msgstr ""
 
-#: inc/bindings.php
 #. translators: %s: linked theme name.
+#: inc/bindings.php:123
 msgid "Built with the %s theme."
 msgstr ""
 
-#: inc/skin.php
+#: inc/skin.php:82
+msgid "Process notation"
+msgstr ""
+
+#: inc/skin.php:92
+msgid "Colophon credit"
+msgstr ""
+
+#: inc/skin.php:102
+msgid "Material swatch"
+msgstr ""
+
+#: inc/skin.php:112
+msgid "Lead paragraph"
+msgstr ""
+
+#: inc/skin.php:122
+msgid "Draft notation heading"
+msgstr ""
+
+#: inc/skin.php:133
 msgid "Eyebrow label"
 msgstr ""
 
-#: inc/skin.php
-msgid "Specimen annotation"
+#: inc/skin.php:143
+msgid "Annotation note"
 msgstr ""
 
-#: inc/skin.php
-msgid "Directory entry"
-msgstr ""
-
-#: inc/skin.php
-msgid "Mark card"
-msgstr ""
-
-#: inc/skin.php
+#: inc/skin.php:154
 msgid "Specimen display"
 msgstr ""
 
-#: inc/admin.php
+#: inc/skin.php:171
+msgid "Selvedge: Studio"
+msgstr ""
+
+#: inc/skin.php:172
+msgid "Studio identity, editorial hero, and maker portrait patterns."
+msgstr ""
+
+#: inc/skin.php:179
+msgid "Selvedge: Journal"
+msgstr ""
+
+#: inc/skin.php:180
+msgid "Studio journal archive and pull-quote patterns."
+msgstr ""
+
+#: inc/skin.php:187
+msgid "Selvedge: Workshop"
+msgstr ""
+
+#: inc/skin.php:188
+msgid "Workshop listing and process notation patterns."
+msgstr ""
+
+#: inc/skin.php:195
+msgid "Selvedge: Materials"
+msgstr ""
+
+#: inc/skin.php:196
+msgid "Material archive and textile swatch gallery patterns."
+msgstr ""
+
 #. translators: %s: theme name.
-msgid "Welcome to %s."
-msgstr ""
-
-#: inc/admin.php
-msgid "Thanks for giving it a home. A few small steps will have your site reading the way it should."
-msgstr ""
-
-#: inc/admin.php
-#. translators: %s: theme name.
-msgid "Set up %s →"
-msgstr ""
-
-#: inc/admin.php
-msgid "Dismiss"
-msgstr ""
-
-#: inc/admin.php
-msgid "You do not have permission to do that."
-msgstr ""
-
-#: inc/admin.php
-#. translators: %s: theme name.
+#: inc/admin.php:72 inc/admin.php:307
 msgid "%s: Get started"
 msgstr ""
 
-#: inc/admin.php
+#. translators: %s: theme name.
+#: inc/admin.php:172
+msgid "Welcome to %s."
+msgstr ""
+
+#: inc/admin.php:175
+msgid "Thanks for giving it a home. A few small steps will have your site reading the way it should."
+msgstr ""
+
+#. translators: %s: theme name.
+#: inc/admin.php:181
+msgid "Set up %s →"
+msgstr ""
+
+#: inc/admin.php:185
+msgid "Dismiss"
+msgstr ""
+
+#: inc/admin.php:201
+msgid "You do not have permission to do that."
+msgstr ""
+
+#. translators: %s: theme name.
+#: inc/admin.php:227
+msgid "%s is a free, full-site-editing theme built to get out of the way of your content. Here is how to make it yours."
+msgstr ""
+
+#: inc/admin.php:232
+msgid "Choose what people land on."
+msgstr ""
+
+#: inc/admin.php:233
+msgid "A visitor's first second decides whether they stay. Set a static front page under Settings → Reading, and give your posts a page of their own."
+msgstr ""
+
+#: inc/admin.php:236
+msgid "Give people a way around."
+msgstr ""
+
+#: inc/admin.php:237
+msgid "A site without a menu is a room without doors. Open the Site Editor, edit the header, and assign your menu to Primary Navigation."
+msgstr ""
+
+#: inc/admin.php:240
+msgid "Start from a pattern, not a blank page."
+msgstr ""
+
+#: inc/admin.php:241
+msgid "In any page or post, open the block inserter, choose Patterns, and find this theme's group. Drop one in and change the words."
+msgstr ""
+
+#: inc/admin.php:244
+msgid "Make it sound like you."
+msgstr ""
+
+#: inc/admin.php:245
+msgid "In the Site Editor, open Styles to change colours and typefaces. Nothing you do there can break the theme — experiment freely."
+msgstr ""
+
+#: inc/admin.php:249
+msgid "This theme is already fast by design: zero front-end JavaScript, self-hosted fonts that don't phone home, and tuning against the Core Web Vitals search engines actually measure."
+msgstr ""
+
+#: inc/admin.php:250
+msgid "It's built toward WCAG 2.2 AA — real focus outlines, a skip link, sensible heading order, and motion that respects a reduce-motion setting. That's the structural floor, not an audited certification. Keep your own copy and images to that bar and the whole site stays welcoming."
+msgstr ""
+
+#: inc/admin.php:252
+msgid "There's a small credit in your footer. It's a thank-you, not a tax — remove it in two clicks in the Site Editor → Footer, or filter it out in code. No hard feelings either way."
+msgstr ""
+
+#: inc/admin.php:255
+msgid "This theme is built on Colophon, a small documented core meant to be reused. The %s walks through how to build your own theme on it."
+msgstr ""
+
+#: inc/admin.php:257
+msgid "developer guide"
+msgstr ""
+
+#: inc/admin.php:316
 msgid "Set up"
 msgstr ""
 
-#: inc/admin.php
+#: inc/admin.php:328
 msgid "Optimize"
 msgstr ""
 
-#: inc/admin.php
+#: inc/admin.php:335
 msgid "The footer credit"
 msgstr ""
 
-#: inc/admin.php
+#: inc/admin.php:340
 msgid "For developers"
 msgstr ""
 
-#: patterns/mark-presentation.php
-msgid "Your studio mark — replace this image"
+#: patterns/editorial-hero.php
+msgid "Studio — woven linen, natural weld dye on undyed warp"
 msgstr ""
 
-#: patterns/mark-presentation.php
-msgid "Studio mark — replace with your mark image"
+#: patterns/editorial-hero.php
+msgid "Studio · Summer 2026"
 msgstr ""
 
-#: patterns/case-study-lead.php
-msgid "Project hero image — replace with your case study photography"
+#: patterns/editorial-hero.php
+msgid "Weld on linen: the dyer's margin"
+msgstr ""
+
+#: patterns/editorial-hero.php
+msgid "Natural dye practice begins long before the mordant bath. The warp colour, the weave structure, the sett — each decision either opens or forecloses what the dye can do. Weld teaches this the hard way: it rewards patience with a yellow that no synthetic colour can replicate."
+msgstr ""
+
+#: patterns/editorial-hero.php
+msgid "Read in the journal →"
+msgstr ""
+
+#: patterns/studio-journal.php patterns/material-archive.php
+msgid "Studio Journal"
+msgstr ""
+
+#: patterns/studio-journal.php
+msgid "All entries →"
+msgstr ""
+
+#: patterns/studio-journal.php
+msgid "No journal entries yet."
+msgstr ""
+
+#: patterns/workshop-listing.php
+msgid "Upcoming Workshops"
+msgstr ""
+
+#: patterns/workshop-listing.php
+msgid "All workshops →"
+msgstr ""
+
+#: patterns/workshop-listing.php
+msgid "Saturday 12 July · 10:00–16:00"
+msgstr ""
+
+#: patterns/workshop-listing.php
+msgid "Natural Dye Fundamentals: Plant Sources and Mordants"
+msgstr ""
+
+#: patterns/workshop-listing.php
+msgid "A working introduction to natural dye practice — mordanting technique, plant extraction, and colour sampling on woven wool and linen. All materials included. Capacity: 8 participants."
+msgstr ""
+
+#: patterns/workshop-listing.php
+msgid "$280 CAD"
+msgstr ""
+
+#: patterns/workshop-listing.php
+msgid "Book →"
+msgstr ""
+
+#: patterns/workshop-listing.php
+msgid "Saturday 9 August · 10:00–17:00"
+msgstr ""
+
+#: patterns/workshop-listing.php
+msgid "Rigid Heddle Weaving: Warp Planning and Structure"
+msgstr ""
+
+#: patterns/workshop-listing.php
+msgid "Warp colour theory, sett calculation, and plain weave structure on a rigid heddle loom. Participants warp and weave a sampler to keep. No prior weaving experience required. Capacity: 6 participants."
+msgstr ""
+
+#: patterns/workshop-listing.php
+msgid "$320 CAD"
+msgstr ""
+
+#: patterns/process-notation.php
+msgid "Studio Method"
+msgstr ""
+
+#: patterns/process-notation.php
+msgid "Weld on undyed warp: a process sequence"
+msgstr ""
+
+#: patterns/process-notation.php
+msgid "Warp planning & sett"
+msgstr ""
+
+#: patterns/process-notation.php
+msgid "Weld is a transparent dye — its value shifts dramatically with the ground it lands on. Begin with the warp colour decision: undyed linen gives a warm, greenish-yellow; bleached cotton moves the result toward a cleaner chrome. Thread count (sett) determines how much ground shows through the weave structure, which in turn sets the saturation ceiling."
+msgstr ""
+
+#: patterns/process-notation.php
+msgid "Mordanting"
+msgstr ""
+
+#: patterns/process-notation.php
+msgid "Alum (potassium aluminium sulphate) at 15–20% WOF. Dissolve in hot water, add fibre at 60°C, raise slowly to 80°C over 45 minutes, hold one hour. Exhaust the bath — discarding mordant solution is waste; the fibres take only what they need. Cool slowly in the bath before rinsing."
+msgstr ""
+
+#: patterns/process-notation.php
+msgid "Weld bath"
+msgstr ""
+
+#: patterns/process-notation.php
+msgid "Fresh or dried Reseda luteola, 200% WOF for a full extraction. Simmer the plant material separately, strain, add fibres to the cooled liquor. Heat slowly to 80°C over 30 minutes, hold 45 minutes. The colour develops during the hold — do not rush the exhaust. Rinse in water of gradually decreasing temperature."
+msgstr ""
+
+#: patterns/process-notation.php
+msgid "Finishing & lightfastness"
+msgstr ""
+
+#: patterns/process-notation.php
+msgid "Weld on alum-mordanted linen rates 5–6 on the Blue Wool scale — good lightfastness, not archival. Store away from direct light. A second mordant bath with iron (ferrous sulphate, 2% WOF) after dyeing will deepen the yellow toward olive and improve fastness by a half-grade."
+msgstr ""
+
+#: patterns/process-notation.php
+msgid "WOF = Weight of Fibre. All percentages by weight. Results vary with water chemistry and plant source."
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Material Archive"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Dyed · woven · warp-planned"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Weld on undyed linen — 15% alum mordant"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Weld on undyed linen · alum mordant 15% WOF · Reseda luteola 200% WOF"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Madder on wool — alum mordant, iron afterbath"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Madder root on natural fleece · alum 20% WOF · iron afterbath 2% WOF"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Indigo vat on bleached cotton"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Indigo fermentation vat · bleached cotton · 6 dip sequence"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Black walnut hull on naturally dyed warp"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Black walnut hull · no mordant required · woven 2/2 twill on undyed warp"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Onion skin on wool — chrome mordant"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Onion skin on scoured fleece · chrome mordant 3% WOF · gold-olive result"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Overdye: weld on indigo-dyed linen"
+msgstr ""
+
+#: patterns/material-archive.php
+msgid "Overdye — weld on indigo ground · linen · produces tertiary green-teal"
+msgstr ""
+
+#: patterns/pull-quote-thread.php
+msgid "From the literature"
+msgstr ""
+
+#: patterns/pull-quote-thread.php
+msgid "The colour is not in the plant. It is in the relationship between the plant, the mordant, the water, and the fibre. Change any one of these and you change the colour."
+msgstr ""
+
+#. translators: %s: italicised book title.
+#: patterns/pull-quote-thread.php
+msgid "Jenny Dean — %s (1999)"
+msgstr ""
+
+#: patterns/pull-quote-thread.php
+msgid "Wild Colour"
+msgstr ""
+
+#: patterns/pull-quote-thread.php
+msgid "The loom is not neutral. It has an opinion about what you put through it. Resist it and you'll fight it all day. Work with it and the cloth tells you what it wants to be."
+msgstr ""
+
+#. translators: %s: italicised book title.
+#: patterns/pull-quote-thread.php
+msgid "Anni Albers — %s (1965)"
+msgstr ""
+
+#: patterns/pull-quote-thread.php
+msgid "On Weaving"
+msgstr ""
+
+#: patterns/pull-quote-thread.php
+msgid "You cannot rush a natural dye. The fibre will take the colour when it is ready. Set a timer if you like; the bath does not care."
+msgstr ""
+
+#: patterns/pull-quote-thread.php
+msgid "Maryanne Gillooly — workshop notes, 2019"
+msgstr ""
+
+#: patterns/maker-portrait.php
+msgid "Studio maker — at the loom"
+msgstr ""
+
+#: patterns/maker-portrait.php
+msgid "About the Studio"
+msgstr ""
+
+#: patterns/maker-portrait.php
+msgid "Woven, dyed, and warp-planned in the studio"
+msgstr ""
+
+#: patterns/maker-portrait.php
+msgid "The studio works at the intersection of historical textile practice and contemporary colour theory. Every piece begins at the design stage — the warp colour, the sett, the weave structure are decided before the first thread is wound. The dye bath is the last decision, not the first."
+msgstr ""
+
+#: patterns/maker-portrait.php
+msgid "Workshop programs run year-round for beginner through advanced practitioners. The journal documents process, materials, and the slow research that underlies the studio's colour practice."
+msgstr ""
+
+#: patterns/maker-portrait.php
+msgid "Training"
+msgstr ""
+
+#: patterns/maker-portrait.php
+msgid "Textile Arts Centre · Penland · Convergence"
+msgstr ""
+
+#: patterns/maker-portrait.php
+msgid "Research focus"
+msgstr ""
+
+#: patterns/maker-portrait.php
+msgid "Natural dye / historical European vegetable colours"
+msgstr ""
+
+#: patterns/subscribe-cta.php
+msgid "Newsletter · Workshops"
+msgstr ""
+
+#: patterns/subscribe-cta.php
+msgid "Join the Studio"
+msgstr ""
+
+#: patterns/subscribe-cta.php
+msgid "A letter from the loom every few weeks — dye-lot notes, warp experiments, and first word on hands-on weaving and indigo workshops. No noise, just the work in progress."
+msgstr ""
+
+#: patterns/subscribe-cta.php
+msgid "you@studio.email"
+msgstr ""
+
+#: patterns/subscribe-cta.php
+msgid "Subscribe"
+msgstr ""
+
+#: patterns/navigation-band.php patterns/studio-footer.php
+msgid "Studio"
+msgstr ""
+
+#: patterns/navigation-band.php patterns/studio-footer.php
+msgid "Work"
+msgstr ""
+
+#: patterns/navigation-band.php patterns/studio-footer.php
+msgid "Journal"
+msgstr ""
+
+#: patterns/navigation-band.php
+msgid "Shop"
+msgstr ""
+
+#: patterns/navigation-band.php patterns/studio-footer.php
+msgid "Contact"
+msgstr ""
+
+#: patterns/studio-footer.php
+msgid "A weaving and natural-dye studio working warp by warp — indigo vats, weld baths, and cloth made slowly to last."
+msgstr ""
+
+#: patterns/studio-footer.php
+msgid "Navigate"
+msgstr ""
+
+#: patterns/studio-footer.php
+msgid "Visit"
+msgstr ""
+
+#: patterns/studio-footer.php
+msgid "14 Mill Race Lane"
+msgstr ""
+
+#: patterns/studio-footer.php
+msgid "Fort Erie, Ontario"
+msgstr ""
+
+#: patterns/studio-footer.php
+msgid "hello@selvedge.studio"
+msgstr ""
+
+#: patterns/studio-footer.php
+msgid "© 2026 Selvedge Studio. Woven by hand."
+msgstr ""
+
+#: patterns/studio-footer.php
+msgid "Indigo · Weld · Natural Dye"
 msgstr ""
