@@ -2,7 +2,7 @@
 
 Contributors: thisismyurl
 Tags: portfolio, e-commerce, blog, full-site-editing, block-patterns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, accessibility-ready, wide-blocks, translation-ready, sticky-post, grid-layout
-Tested up to: 6.7
+Tested up to: 7.1
 Requires at least: 6.5
 Requires PHP: 7.4
 Stable tag: 1.6165.0948
