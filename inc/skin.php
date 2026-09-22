@@ -16,8 +16,6 @@
  * @package selvedge
  */
 
-namespace Selvedge;
-
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -27,12 +25,12 @@ defined( 'ABSPATH' ) || exit;
  * material-swatch: 1:1 — square crop for the material-archive gallery grid.
  * maker-portrait: 2:3 — portrait orientation for the maker-portrait pattern.
  */
-function skin_image_sizes(): void {
+function selvedge_skin_image_sizes(): void {
 	add_image_size( 'selvedge-editorial-hero', 740, 493, true );  // 3:2 hero image.
 	add_image_size( 'selvedge-material-swatch', 600, 600, true ); // 1:1 material.
 	add_image_size( 'selvedge-maker-portrait', 600, 900, true );  // 2:3 portrait.
 }
-add_action( 'after_setup_theme', __NAMESPACE__ . '\\skin_image_sizes' );
+add_action( 'after_setup_theme', 'selvedge_skin_image_sizes' );
 
 /**
  * Preload Newsreader variable — the LCP-critical font on every Selvedge page.
@@ -65,7 +63,7 @@ add_filter(
  *
  * Pillar 7 (High Agency): editors can apply these without developer help.
  */
-function skin_block_styles(): void {
+function selvedge_skin_block_styles(): void {
 
 	// [SKIN] Group as a process notation step — weld left accent, Jakarta 500 label,
 	// Newsreader italic step description. Used in the process-notation pattern.
@@ -150,7 +148,7 @@ function skin_block_styles(): void {
 		)
 	);
 }
-add_action( 'init', __NAMESPACE__ . '\\skin_block_styles' );
+add_action( 'init', 'selvedge_skin_block_styles' );
 
 /**
  * Register Selvedge's block pattern categories.
@@ -158,7 +156,7 @@ add_action( 'init', __NAMESPACE__ . '\\skin_block_styles' );
  * Patterns auto-register from patterns/ (WordPress 6.0+). These categories
  * give them a clear home under "Selvedge: …" in the pattern library.
  */
-function skin_pattern_categories(): void {
+function selvedge_skin_pattern_categories(): void {
 
 	register_block_pattern_category(
 		'selvedge-studio',
@@ -192,4 +190,4 @@ function skin_pattern_categories(): void {
 		)
 	);
 }
-add_action( 'init', __NAMESPACE__ . '\\skin_pattern_categories' );
+add_action( 'init', 'selvedge_skin_pattern_categories' );
