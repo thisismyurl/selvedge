@@ -15,10 +15,10 @@
 	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|4","padding":{"bottom":"var:preset|spacing|10"}}},"layout":{"type":"constrained","contentSize":"680px"}} -->
 	<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--10)">
 		<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|ink-muted"}}} -->
-		<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted)"><?php esc_html_e( 'Studio Method', 'selvedge' ); ?></p>
+		<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2-xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted)"><?php esc_html_e( 'Studio Method', 'selvedge' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontWeight":"600","fontSize":"var:preset|font-size|3xl","lineHeight":"1.1","letterSpacing":"-0.015em","fontOpticalSizing":"auto"},"color":{"text":"var:preset|color|ink"}}} -->
-		<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--3xl);line-height:1.1;letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--ink)"><?php esc_html_e( 'Weld on undyed warp: a process sequence', 'selvedge' ); ?></h2>
+		<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--3-xl);line-height:1.1;letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--ink)"><?php esc_html_e( 'Weld on undyed warp: a process sequence', 'selvedge' ); ?></h2>
 		<!-- /wp:heading -->
 	</div>
 	<!-- /wp:group -->

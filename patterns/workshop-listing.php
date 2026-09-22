@@ -33,7 +33,7 @@
 			<!-- wp:group {"className":"selvedge-workshop-card","style":{"spacing":{"blockGap":"var:preset|spacing|4"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group selvedge-workshop-card">
 				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.08em","textTransform":"uppercase"},"color":{"text":"var:preset|color|indigo"}}} -->
-				<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--indigo)"><?php esc_html_e( 'Saturday 12 July · 10:00–16:00', 'selvedge' ); ?></p>
+				<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--indigo)"><?php esc_html_e( 'Saturday 12 July · 10:00–16:00', 'selvedge' ); ?></p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontWeight":"600","fontSize":"var:preset|font-size|xl","lineHeight":"1.1","fontOpticalSizing":"auto"},"color":{"text":"var:preset|color|ink"}}} -->
 				<h3 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--xl);line-height:1.1;font-optical-sizing:auto;color:var(--wp--preset--color--ink)"><?php esc_html_e( 'Natural Dye Fundamentals: Plant Sources and Mordants', 'selvedge' ); ?></h3>
@@ -64,7 +64,7 @@
 			<!-- wp:group {"className":"selvedge-workshop-card","style":{"spacing":{"blockGap":"var:preset|spacing|4"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group selvedge-workshop-card">
 				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.08em","textTransform":"uppercase"},"color":{"text":"var:preset|color|indigo"}}} -->
-				<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--indigo)"><?php esc_html_e( 'Saturday 9 August · 10:00–17:00', 'selvedge' ); ?></p>
+				<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--indigo)"><?php esc_html_e( 'Saturday 9 August · 10:00–17:00', 'selvedge' ); ?></p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontWeight":"600","fontSize":"var:preset|font-size|xl","lineHeight":"1.1","fontOpticalSizing":"auto"},"color":{"text":"var:preset|color|ink"}}} -->
 				<h3 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--xl);line-height:1.1;font-optical-sizing:auto;color:var(--wp--preset--color--ink)"><?php esc_html_e( 'Rigid Heddle Weaving: Warp Planning and Structure', 'selvedge' ); ?></h3>

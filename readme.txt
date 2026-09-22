@@ -5,7 +5,7 @@ Tags: portfolio, e-commerce, blog, full-site-editing, block-patterns, custom-col
 Tested up to: 7.1
 Requires at least: 6.5
 Requires PHP: 7.4
-Stable tag: 1.6165.0948
+Stable tag: 1.6265.1630
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -153,6 +153,23 @@ bindings, which require WordPress 6.5 or later. On earlier versions the theme
 degrades cleanly: the bound paragraphs render empty rather than erroring.
 
 == Changelog ==
+
+= 1.6265.1630 =
+Synced two fixes from Colophon core (1.6265.1620), found during independent
+wp-expert reviews of Kerf and Halyard, since this theme was still running
+the pre-fix core:
+
+* inc/bindings.php now registers the {slug}/footer-credit block-bindings
+  source that parts/footer.html has bound its credit line to since the line
+  existed. The source was never registered anywhere in the collection, so
+  the credit rendered as an empty paragraph in every footer. functions.php
+  also gained the file_exists() guard on the WP-CLI require that a separate
+  regression had dropped.
+* theme.json's h1/h2 styles and eight patterns (maker-portrait, material-archive, process-notation, pull-quote-thread, studio-footer, studio-journal, subscribe-cta, workshop-listing) had the same --2xl/--3xl kebab-case bug described above. Corrected every reference.
+* settings.typography.defaultFontSizes and
+  settings.spacing.defaultSpacingSizes set to false, matching the rest of the
+  collection, so the editor's own auto-generated presets stop merging with
+  this theme's own curated set.
 
 = 1.6165.0948 =
 Accessibility (WCAG 1.4.3 contrast — exhaustive audit across all style variations):

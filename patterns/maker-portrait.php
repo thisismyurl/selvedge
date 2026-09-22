@@ -28,11 +28,11 @@
 		<div class="wp-block-column" style="flex-basis:62%">
 
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|ink-muted"},"spacing":{"margin":{"bottom":"var:preset|spacing|5"}}}} -->
-			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted);margin-bottom:var(--wp--preset--spacing--5)"><?php esc_html_e( 'About the Studio', 'selvedge' ); ?></p>
+			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2-xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted);margin-bottom:var(--wp--preset--spacing--5)"><?php esc_html_e( 'About the Studio', 'selvedge' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontWeight":"600","fontSize":"var:preset|font-size|3xl","lineHeight":"1.1","letterSpacing":"-0.015em","fontOpticalSizing":"auto"},"color":{"text":"var:preset|color|ink"}}} -->
-			<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--3xl);line-height:1.1;letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--ink)"><?php esc_html_e( 'Woven, dyed, and warp-planned in the studio', 'selvedge' ); ?></h2>
+			<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--3-xl);line-height:1.1;letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--ink)"><?php esc_html_e( 'Woven, dyed, and warp-planned in the studio', 'selvedge' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"className":"is-style-selvedge-lead","style":{"spacing":{"margin":{"top":"var:preset|spacing|6"}}}} -->
@@ -49,14 +49,14 @@
 
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|1"}},"layout":{"type":"default"}} -->
 				<div class="wp-block-group">
-					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.08em","textTransform":"uppercase"},"color":{"text":"var:preset|color|ink-muted"}}} --><p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted)"><?php esc_html_e( 'Training', 'selvedge' ); ?></p><!-- /wp:paragraph -->
+					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.08em","textTransform":"uppercase"},"color":{"text":"var:preset|color|ink-muted"}}} --><p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted)"><?php esc_html_e( 'Training', 'selvedge' ); ?></p><!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|sm","fontWeight":"500"},"color":{"text":"var:preset|color|ink"}}} --><p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:500;color:var(--wp--preset--color--ink)"><?php esc_html_e( 'Textile Arts Centre · Penland · Convergence', 'selvedge' ); ?></p><!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
 
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|1"}},"layout":{"type":"default"}} -->
 				<div class="wp-block-group">
-					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.08em","textTransform":"uppercase"},"color":{"text":"var:preset|color|ink-muted"}}} --><p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted)"><?php esc_html_e( 'Research focus', 'selvedge' ); ?></p><!-- /wp:paragraph -->
+					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.08em","textTransform":"uppercase"},"color":{"text":"var:preset|color|ink-muted"}}} --><p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp--preset--color--ink-muted)"><?php esc_html_e( 'Research focus', 'selvedge' ); ?></p><!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|sm","fontWeight":"500"},"color":{"text":"var:preset|color|ink"}}} --><p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);font-weight:500;color:var(--wp--preset--color--ink)"><?php esc_html_e( 'Natural dye / historical European vegetable colours', 'selvedge' ); ?></p><!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->

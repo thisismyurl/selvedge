@@ -12,11 +12,11 @@
 <div class="wp-block-group alignfull selvedge-section selvedge-cta selvedge-band--indigo" style="padding-top:var(--wp--preset--spacing--16);padding-bottom:var(--wp--preset--spacing--16);padding-left:var(--wp--preset--spacing--5);padding-right:var(--wp--preset--spacing--5)">
 
 	<!-- wp:paragraph {"className":"is-style-selvedge-eyebrow","style":{"color":{"text":"var:preset|color|footer-meta"},"spacing":{"margin":{"bottom":"var:preset|spacing|5"}},"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.12em","textTransform":"uppercase"}}} -->
-	<p class="is-style-selvedge-eyebrow" style="color:var(--wp--preset--color--footer-meta);margin-bottom:var(--wp--preset--spacing--5);font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Newsletter · Workshops', 'selvedge' ); ?></p>
+	<p class="is-style-selvedge-eyebrow" style="color:var(--wp--preset--color--footer-meta);margin-bottom:var(--wp--preset--spacing--5);font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2-xs);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Newsletter · Workshops', 'selvedge' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontWeight":"600","fontSize":"var:preset|font-size|3xl","lineHeight":"1.05","letterSpacing":"-0.02em","fontOpticalSizing":"auto"},"color":{"text":"var:preset|color|footer-fg"}}} -->
-	<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--3xl);line-height:1.05;letter-spacing:-0.02em;font-optical-sizing:auto;color:var(--wp--preset--color--footer-fg)"><?php esc_html_e( 'Join the Studio', 'selvedge' ); ?></h2>
+	<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-size:var(--wp--preset--font-size--3-xl);line-height:1.05;letter-spacing:-0.02em;font-optical-sizing:auto;color:var(--wp--preset--color--footer-fg)"><?php esc_html_e( 'Join the Studio', 'selvedge' ); ?></h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|md","lineHeight":"1.7"},"color":{"text":"var:preset|color|footer-meta"},"spacing":{"margin":{"top":"var:preset|spacing|5","bottom":"var:preset|spacing|9"}}}} -->

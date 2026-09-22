@@ -17,7 +17,7 @@
 		<!-- wp:column {"width":"40%"} -->
 		<div class="wp-block-column" style="flex-basis:40%">
 			<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","fontWeight":"600","fontStyle":"italic","fontSize":"var:preset|font-size|2xl","letterSpacing":"-0.015em","fontOpticalSizing":"auto"},"color":{"text":"var:preset|color|footer-fg"}}} -->
-			<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-style:italic;font-size:var(--wp--preset--font-size--2xl);letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--footer-fg)"><?php esc_html_e( 'Selvedge', 'selvedge' ); ?></h2>
+			<h2 style="font-family:var(--wp--preset--font-family--newsreader);font-weight:600;font-style:italic;font-size:var(--wp--preset--font-size--2-xl);letter-spacing:-0.015em;font-optical-sizing:auto;color:var(--wp--preset--color--footer-fg)"><?php esc_html_e( 'Selvedge', 'selvedge' ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|sm","lineHeight":"1.7"},"color":{"text":"var:preset|color|footer-meta"},"spacing":{"margin":{"top":"var:preset|spacing|4"}}}} -->
 			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--sm);line-height:1.7;color:var(--wp--preset--color--footer-meta);margin-top:var(--wp--preset--spacing--4)"><?php esc_html_e( 'A weaving and natural-dye studio working warp by warp — indigo vats, weld baths, and cloth made slowly to last.', 'selvedge' ); ?></p>
@@ -28,7 +28,7 @@
 		<!-- wp:column {"width":"30%"} -->
 		<div class="wp-block-column" style="flex-basis:30%">
 			<!-- wp:paragraph {"className":"is-style-selvedge-eyebrow","style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.12em","textTransform":"uppercase"},"color":{"text":"var:preset|color|footer-meta"},"spacing":{"margin":{"bottom":"var:preset|spacing|5"}}}} -->
-			<p class="is-style-selvedge-eyebrow" style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--wp--preset--color--footer-meta);margin-bottom:var(--wp--preset--spacing--5)"><?php esc_html_e( 'Navigate', 'selvedge' ); ?></p>
+			<p class="is-style-selvedge-eyebrow" style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2-xs);font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--wp--preset--color--footer-meta);margin-bottom:var(--wp--preset--spacing--5)"><?php esc_html_e( 'Navigate', 'selvedge' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:list {"className":"selvedge-footer__links","style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|base","lineHeight":"2.0"},"color":{"text":"var:preset|color|footer-fg"},"spacing":{"padding":{"left":"0"}}}} -->
 			<ul class="wp-block-list selvedge-footer__links" style="padding-left:0;color:var(--wp--preset--color--footer-fg);font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--base);line-height:2.0">
@@ -52,7 +52,7 @@
 		<!-- wp:column {"width":"30%"} -->
 		<div class="wp-block-column" style="flex-basis:30%">
 			<!-- wp:paragraph {"className":"is-style-selvedge-eyebrow","style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs","fontWeight":"600","letterSpacing":"0.12em","textTransform":"uppercase"},"color":{"text":"var:preset|color|footer-meta"},"spacing":{"margin":{"bottom":"var:preset|spacing|5"}}}} -->
-			<p class="is-style-selvedge-eyebrow" style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--wp--preset--color--footer-meta);margin-bottom:var(--wp--preset--spacing--5)"><?php esc_html_e( 'Visit', 'selvedge' ); ?></p>
+			<p class="is-style-selvedge-eyebrow" style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2-xs);font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--wp--preset--color--footer-meta);margin-bottom:var(--wp--preset--spacing--5)"><?php esc_html_e( 'Visit', 'selvedge' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|base","lineHeight":"1.8"},"color":{"text":"var:preset|color|footer-fg"}}} -->
 			<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--base);line-height:1.8;color:var(--wp--preset--color--footer-fg)"><?php
@@ -75,10 +75,10 @@
 	<!-- wp:group {"className":"selvedge-footer__legal","style":{"spacing":{"margin":{"top":"var:preset|spacing|11"},"padding":{"top":"var:preset|spacing|6"}},"border":{"top":{"color":"var:preset|color|footer-meta","style":"solid","width":"1px"}}},"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center","flexWrap":"wrap"}} -->
 	<div class="wp-block-group selvedge-footer__legal" style="border-top:1px solid var(--wp--preset--color--footer-meta);margin-top:var(--wp--preset--spacing--11);padding-top:var(--wp--preset--spacing--6)">
 		<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs"},"color":{"text":"var:preset|color|footer-meta"}}} -->
-		<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);color:var(--wp--preset--color--footer-meta)"><?php esc_html_e( '© 2026 Selvedge Studio. Woven by hand.', 'selvedge' ); ?></p>
+		<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2-xs);color:var(--wp--preset--color--footer-meta)"><?php esc_html_e( '© 2026 Selvedge Studio. Woven by hand.', 'selvedge' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|jakarta","fontSize":"var:preset|font-size|2xs"},"color":{"text":"var:preset|color|footer-meta"}}} -->
-		<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2xs);color:var(--wp--preset--color--footer-meta)"><?php esc_html_e( 'Indigo · Weld · Natural Dye', 'selvedge' ); ?></p>
+		<p style="font-family:var(--wp--preset--font-family--jakarta);font-size:var(--wp--preset--font-size--2-xs);color:var(--wp--preset--color--footer-meta)"><?php esc_html_e( 'Indigo · Weld · Natural Dye', 'selvedge' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
